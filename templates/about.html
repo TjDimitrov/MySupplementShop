@@ -1,0 +1,81 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <section class="page-section" id="about">
+        <div class="container about">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading">Learn more about us!</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                                     src="{% static 'assets/img/about/1.jpg' %}" alt="..."/></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Our Mission</h4>
+                        </div>
+                        <div class="timeline-body"><p class="about-text">At Supplement Shop, our mission is
+                            to provide you with the highest quality supplements that support your well-being and active
+                            lifestyle. We believe that health is a journey, and we're here to guide you every step of
+                            the way. Our commitment to excellence, transparency, and customer satisfaction sets us apart
+                            as a leader in the supplement industry.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                                     src="{% static 'assets/img/about/2.jpg' %}" alt="..."/></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Quality and Innovation</h4>
+                        </div>
+                        <div class="timeline-body"><p class="about-text">We take pride in offering a curated selection
+                            of supplements that meet the highest standards of quality and purity. Our products are
+                            sourced from reputable manufacturers and are rigorously tested for potency and safety. We
+                            stay at the forefront of scientific research and innovation to bring you the latest
+                            advancements in nutritional supplementation.</p></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                                     src="{% static 'assets/img/about/3.jpg' %}" alt="..."/></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Expert Guidance</h4>
+                        </div>
+                        <div class="timeline-body"><p class="about-text">Our team of health and fitness enthusiasts is
+                            here to provide you with expert guidance and personalized recommendations. Whether you're
+                            looking to enhance your workout performance, boost your immune system, or achieve better
+                            overall wellness, we're here to help you make informed choices that align with your
+                            individual needs.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                                     src="{% static 'assets/img/about/4.jpg' %}" alt="..."/></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Community and Support</h4>
+                        </div>
+                        <div class="timeline-body"><p class="about-text">At Supplement Shop, we believe in
+                            the power of community. We are committed to building a community of like-minded individuals
+                            who share a passion for health and wellness. Join us on our journey as we provide valuable
+                            resources, educational content, and a platform for you to connect with others who are on a
+                            similar path.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br/>
+                            Of Our
+                            <br/>
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <div class="container mb-5 products-main" style="background-color: white; max-height:100%; margin-top:5rem; padding: 5rem 0 0;">
+        <div class="row products">
+            <div class="col-md-6">
+                <img
+                        src="{{ product.image.url }}"
+                        alt="..."
+                        class="image-responsive"
+                        style="max-height:500px; max-width: 405px; margin-bottom: 50px; margin-left: 70px;"
+                />
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>{{ product.name }}</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        {% for type in product.category.all %}
+                            <span class="label label-primary">{{ type.name }}</span>
+                        {% endfor %}
+                        <span class="monospaced">{{ product.id }}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="label label-primary">
+                            {{ product.brand }}
+                        </p>
+                    </div>
+                </div><!-- end row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        {% include 'products/rating.html' %}
+                        <br>
+                        <div id="confirm-box"></div>
+                    </div>
+                </div><!-- end row -->
+                <div class="row">
+                    <div class="col-md-12 bottom-rule">
+                        <h2 class="product-price">{{ product.price }}lv.</h2>
+                    </div>
+                </div><!-- end row -->
+                <div class="row add-to-cart">
+                    <div class="col-md-5 product-qty">
+                      <button class="btn btn-quantity btn-lg btn-qty decrement-btn">-</button>
+                        <input type="text" name="quantity" class="btn btn-quantity btn-lg btn-qty quantity-input" value="1"/>
+                        <button class="btn btn-quantity btn-lg btn-qty increment-btn">+</button>
+                    </div>
+                    <div class="col-md-4">
+                        {% csrf_token %}
+                        <button class="btn btn-primary btn-lg add-to-cart-button"
+                                data-product-id="{{ product.pk }}">
+                            Add to wishlist
+                        </button>
+                    </div>
+                </div><!-- end row -->
+                <div class="row">
+                    <div class="col-md-12 top-10">
+                        <p>To order by telephone, <a href="tel:18005551212">please call 1-800-555-1212</a></p>
+                    </div>
+                </div><!-- end row -->
+                <div class="col-md-12">
+                    <p class="description">
+                        {{ product.description }}
+                    </p>
+                </div>
+            </div><!-- end row -->
+            <!-- Nav tabs -->
+        </div>
+        <div id="popup" class="popup row card">
+        <div>
+            <img class="success-img" src="https://cdn-icons-png.flaticon.com/512/5610/5610944.png" alt="...">
+        </div>
+        <div>
+            Your product was added to the cart!
+        </div>
+    </div>
+    </div>
+{% endblock %}

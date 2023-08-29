@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block page_content %}
+    <div class="edit-container">
+        <div class="main-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <form method="post" action="{% url 'add team member' %}" enctype="multipart/form-data">
+                                <div class="row mb-3">
+                                    {% crispy form %}
+                                    <div class="row mb-3">
+                                        {% csrf_token %}
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="submit" class="mt-1 btn btn-primary py-2 px-3" value="Save Changes">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

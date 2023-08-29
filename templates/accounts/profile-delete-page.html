@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load custom_filters %}
+{% load crispy_forms_filters %}
+{% load static %}
+{% block page_content %}
+    <div class="edit-container delete-container" style="text-align:center">
+        <div class="main-body">
+            <div class="card-body">
+                <form method="post" action="{% url 'profile delete' object.pk %}">
+                    <div class="row">
+                        <h1>Are you sure you want to delete your account?</h1>
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col">
+                                <input type="submit" class="mt-1 btn btn-primary btn-danger px-4"
+                                       value="Delete Profile">
+                            </div>
+                            <div class="col">
+                                <a class="edit-btn mt-1 btn btn-primary py-2 px-3" href="javascript:history.back()">Go
+                                    Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

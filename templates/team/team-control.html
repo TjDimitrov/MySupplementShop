@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <section class="page-section" id="team">
+        <div class="container">
+            <div class="card text-center" style="background-color: transparent; border-color: transparent;">
+                <div class="card-body">
+                    {% if not all_members %}
+                        <h5 class="card-title text-light">No members found.</h5>
+                    {% endif %}
+                    <a href="{% url 'add team member' %}" class="btn btn-warning">Add new member</a>
+                </div>
+            </div>
+            <div class="row justify-content-evenly">
+                {% for member in all_members %}
+                    <div class="card" style="width: 18rem; padding: 0;">
+                        <img class="card-img-top" src="{{ member.profile_photo.url }}" alt="{{ member.full_name }}">
+                        <div class="card-body" style="text-align: center; background: transparent">
+                            <h5 class="card-title">{{ member.full_name }}</h5>
+                            <div class="row mb-3">
+                                <div class="text-secondary">
+                                    <a href="{% url 'edit team member' pk=member.pk %}"
+                                       class="btn btn-warning px-4">Edit Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

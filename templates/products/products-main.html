@@ -1,0 +1,97 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+    <div class="container py-5 mt-5 mb-5 products-main">
+        <div class="d-flex justify-content-center row">
+            {% if request.user and request.user.is_staff %}
+                <div class="col-md-10">
+                <div class="card text-center" style="background-color: transparent; border-color: transparent;">
+                    <div class="card-body">
+                        <a href="{% url 'add product' %}" class="btn btn-warning">Add new product</a>
+                    </div>
+                </div>
+            {% endif %}
+            <div>
+                <ul class="row p-2 border rounded mb-2 text-center"
+                    style="list-style-type: none; background-color: rgba(5,5,5,0.53);">
+                    <li class="col-sm"><a class="text-light products-nav-item"
+                                          href="{% url 'products_by_category' category_name='Protein Powders' %}">Protein
+                        Powders</a></li>
+                    <li class="col-sm"><a class="text-light products-nav-item"
+                                          href="{% url 'products_by_category' category_name="BCAA's" %}">BCAA's</a></li>
+                    <li class="col-sm"><a class="text-light products-nav-item"
+                                          href="{% url 'products_by_category' category_name='Pre-workouts' %}">Pre-Workouts</a>
+                    </li>
+                    <li class="col-sm"><a class="text-light products-nav-item"
+                                          href="{% url 'products_by_category' category_name='Vitamins and Minerals' %}">Vitamins</a>
+                    </li>
+                    <li class="col-sm"><a class="text-light products-nav-item"
+                                          href="{% url 'products_by_category' category_name='Accessories' %}">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+            {% for product in all_products %}
+                <div class="row p-2 bg-white border rounded mb-2">
+                    <div class="col-md-2 mt-1">
+                        <a href="{% url 'product details' product.id %}"> <img
+                                class="img-fluid img-responsive rounded product-image"
+                                src="{{ product.image.url }}" alt="..."></a>
+                    </div>
+                    <div class="col-md-7 mt-1">
+                        <h5>{{ product.name }}</h5>
+                        <h5 class="card-title">
+                            <span class="fa fa-star fa-xs {% if product.average_rating > 0 %} checked {% endif %}"></span>
+                            <span class="fa fa-star fa-xs {% if product.average_rating > 1 %} checked {% endif %}"></span>
+                            <span class="fa fa-star fa-xs {% if product.average_rating > 2 %} checked {% endif %}"></span>
+                            <span class="fa fa-star fa-xs {% if product.average_rating > 3 %} checked {% endif %}"></span>
+                            <span class="fa fa-star fa-xs {% if product.average_rating > 4 %} checked {% endif %}"></span>
+                            <span class="fa-xs">{{ product.average_rating }}</span>
+                        </h5>
+                        <div class="mt-1 mb-1 spec-1"><span>{{ product.brand }}</span></div>
+                        {% if product.quantity %}
+                            <div class="mt-1 mb-1 spec-1"><span>{{ product.quantity }}</span></div>
+                        {% else %}
+                            <div class="mt-1 mb-1 spec-1"><span><br></span></div>
+                        {% endif %}
+                        <p class="text-justify text-truncate">{{ product.description }}</p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                        <div class="d-flex flex-row-3 align-items-center">
+                            <h4 class="mr-1">{{ product.price }}lv.</h4>
+                            {#                        <span class="strike-text">$20.99</span>#}
+                        </div>
+                        <h6 class="text-success">Free shipping</h6>
+                        <div class="d-flex flex-column mt-4">
+                            <a href="{% url 'product details' product.pk %}"
+                               class="btn btn-primary btn-sm">Details</a>
+                            {% csrf_token %}
+                            <button class="btn btn-outline-primary btn-sm mt-2 add-to-cart-button"
+                                    data-product-id="{{ product.pk }}">
+                                Add to wishlist
+                            </button>
+                            {% if request.user and request.user.is_staff %}
+                                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                    <a href="{% url 'edit product' product.pk %}" type="button"
+                                       class="btn btn-secondary">Edit</a>
+                                    <a href="{% url 'delete product' product.pk %}" type="button" class="btn btn-danger
+                                {% if not request.user.is_superuser %} disabled {% endif %}">
+                                        Delete</a>
+                                </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup row card">
+        <div>
+            <img class="success-img" src="https://cdn-icons-png.flaticon.com/512/5610/5610944.png" alt="...">
+        </div>
+        <div>
+            Your product was added to the cart!
+        </div>
+    </div>
+{% endblock %}

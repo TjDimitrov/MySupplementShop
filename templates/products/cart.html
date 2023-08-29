@@ -1,0 +1,178 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% load custom_filters %}
+{% block page_content %}
+<section class="h-100 h-custom cart" style="background-color: #eee; margin-bottom:200px;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card" style="width:80%; margin: auto;">
+          <div class="card-body p-4">
+
+            <div class="row">
+
+              <div class="col-lg-7">
+                <h5 class="mb-3"><a href="{% url 'products' %}" class="text-body"><i
+                      class="fas fa-long-arrow-alt-left me-2"></i>Continue shopping</a></h5>
+                <hr>
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div>
+                      <p class="mb-1">Shopping cart</p>
+                      <p class="mb-0">You have {{ total_items }} items in your cart</p>
+                  </div>
+                        <div class="dropdown">
+                            Sort by:
+                            <button class="dropdown-toggle" type="button" id="sortDropdownButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="background-color:transparent; border:0; text-decoration:underline;">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="sortDropdownButton">
+                                <li><a class="dropdown-item" href="{% url 'view cart sorted' 'name' %}">Name</a></li>
+                                <li><a class="dropdown-item" href="{% url 'view cart sorted' 'quantity' %}">Quantity</a></li>
+                                <li><a class="dropdown-item" href="{% url 'view cart sorted' 'price' %}">Price</a></li>
+                            </ul>
+                        </div>
+                </div>
+
+                  <div class="d-flex justify-content-around" style="margin-bottom: -15px;">
+                      <div class="row" style="margin-right: -2rem;">
+                          <p>Item</p>
+                      </div>
+                      <div class="row">
+                          <p class="col-sm" style="padding-right: 2.5rem;">Quantity</p>
+                          <p class="col-sm" style="padding-left: 4rem; margin-right: -3rem;">Price</p>
+                      </div>
+                  </div>
+
+                  {% for item in cart_items %}
+                <div class="card mb-3 mb-lg-0">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                            <a href="{% url 'product details' item.product.pk %}">
+                                <img
+                                        src="{{ item.product.image.url }}"
+                                        class="img-fluid rounded-3" alt="Shopping item"
+                                        style="min-width: 65px; max-width: 65px;">
+                            </a>
+                        </div>
+                        <div class="ms-3">
+                          <h5>{{ item.product.name }}</h5>
+                            {% if item.product.quantity %}
+                                <div class="mt-1 mb-1 spec-1"><span>{{ item.product.quantity }}</span></div>
+                            {% else %}
+                                <div class="mt-1 mb-1 spec-1"><span><br></span></div>
+                            {% endif %}
+                        </div>
+                      </div>
+                        <span id="num1" style="visibility:hidden;">{{ item.product.price }}</span>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px; margin-right:70px;">
+                          <h5 id="num2" class="fw-normal mb-0">{{ item.quantity }}</h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">{% multiply item.quantity item.product.price %}</h5>
+                        </div>
+                        <a href="{% url 'remove_from_cart' item.product.pk %}" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                      <br>
+                  {% endfor %}
+              </div>
+              <div class="col-lg-5">
+
+                <div class="card bg-primary text-white rounded-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h5 class="mb-0">Card details</h5>
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                        class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                    </div>
+
+                    <p class="small mb-2">Card type</p>
+                    <a href="#!" type="submit" class="text-white"><i
+                        class="fab fa-cc-mastercard fa-2x me-2"></i></a>
+                    <a href="#!" type="submit" class="text-white"><i
+                        class="fab fa-cc-visa fa-2x me-2"></i></a>
+                    <a href="#!" type="submit" class="text-white"><i
+                        class="fab fa-cc-amex fa-2x me-2"></i></a>
+                    <a href="#!" type="submit" class="text-white"><i class="fab fa-cc-paypal fa-2x"></i></a>
+
+                    <form class="mt-4">
+                      <div class="form-outline form-white mb-4">
+                        <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                          placeholder="Cardholder's Name" />
+                        <label class="form-label" for="typeName">Cardholder's Name</label>
+                      </div>
+
+                      <div class="form-outline form-white mb-4">
+                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                          placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                        <label class="form-label" for="typeText">Card Number</label>
+                      </div>
+
+                      <div class="row mb-4">
+                        <div class="col-md-6">
+                          <div class="form-outline form-white">
+                            <input type="text" id="typeExp" class="form-control form-control-lg"
+                              placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
+                            <label class="form-label" for="typeExp">Expiration</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-outline form-white">
+                            <input type="password" id="typeText" class="form-control form-control-lg"
+                              placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                            <label class="form-label" for="typeText">Cvv</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+
+                    <hr class="my-4">
+
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-2">Subtotal</p>
+                      <p class="mb-2">{{ total }}lv.</p>
+                    </div>
+                    <button data-toggle="modal" data-target=".cart-checkout" type="button"
+                            class="btn btn-info btn-block btn-lg {% if not cart_items %}disabled{% endif %}" style="width:100%">
+                      <div class="d-flex justify-content-between">
+                        <span>{{ total }}lv.</span>
+                        <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Checkout-->
+<div class="modal fade cart-checkout" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="delete-profile">
+                    <h3>
+                        Your order has been received and is now in the queue to be shipped out!
+                    </h3>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="edit-btn" href="javascript:history.back()"><button type="button" class="btn btn-secondary" data-dismiss="modal">Go Back</button></a>
+             <a href="{% url 'products' %}"><button type="button" class="btn btn-success">Continue shopping</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
