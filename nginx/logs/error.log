@@ -1,0 +1,1291 @@
+2023/09/03 13:05:51 [notice] 1#1: using the "epoll" event method
+2023/09/03 13:05:51 [notice] 1#1: nginx/1.25.2
+2023/09/03 13:05:51 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/03 13:05:51 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/03 13:05:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/03 13:05:51 [notice] 1#1: start worker processes
+2023/09/03 13:05:51 [notice] 1#1: start worker process 20
+2023/09/03 13:05:51 [notice] 1#1: start worker process 21
+2023/09/03 13:05:51 [notice] 1#1: start worker process 22
+2023/09/03 13:05:51 [notice] 1#1: start worker process 23
+2023/09/03 13:05:51 [notice] 1#1: start worker process 24
+2023/09/03 13:05:51 [notice] 1#1: start worker process 25
+2023/09/03 13:05:51 [notice] 1#1: start worker process 26
+2023/09/03 13:05:51 [notice] 1#1: start worker process 27
+2023/09/03 13:10:04 [error] 20#20: *1 open() "/home/app/web/staticfiles/js/scripts.js" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/js/scripts.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:04 [error] 21#21: *3 open() "/home/app/web/staticfiles/css/styles.css" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:04 [error] 22#22: *4 open() "/home/app/web/staticfiles/assets/img/logos/microsoft.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/microsoft.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:04 [error] 23#23: *5 open() "/home/app/web/staticfiles/assets/img/logos/google.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/google.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:04 [error] 23#23: *5 open() "/home/app/web/staticfiles/assets/img/logos/facebook.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/facebook.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:04 [error] 22#22: *4 open() "/home/app/web/staticfiles/assets/img/logos/ibm.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/ibm.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:05 [error] 22#22: *4 open() "/home/app/web/staticfiles/js/scripts.js" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/js/scripts.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:05 [error] 22#22: *4 open() "/home/app/web/staticfiles/assets/favicon.ico" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/favicon.ico HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:17 [error] 22#22: *4 open() "/home/app/web/staticfiles/js/scripts.js" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/js/scripts.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:17 [error] 21#21: *3 open() "/home/app/web/staticfiles/assets/img/logos/microsoft.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/microsoft.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:17 [error] 23#23: *5 open() "/home/app/web/staticfiles/css/styles.css" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:17 [error] 20#20: *1 open() "/home/app/web/staticfiles/assets/img/logos/google.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/google.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:17 [error] 20#20: *1 open() "/home/app/web/staticfiles/assets/img/logos/facebook.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/facebook.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:17 [error] 23#23: *5 open() "/home/app/web/staticfiles/assets/img/logos/ibm.svg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/assets/img/logos/ibm.svg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:10:19 [error] 23#23: *5 open() "/home/app/web/staticfiles/js/scripts.js" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/js/scripts.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2023/09/03 13:12:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/03 13:12:29 [notice] 20#20: gracefully shutting down
+2023/09/03 13:12:29 [notice] 21#21: gracefully shutting down
+2023/09/03 13:12:29 [notice] 24#24: gracefully shutting down
+2023/09/03 13:12:29 [notice] 26#26: gracefully shutting down
+2023/09/03 13:12:29 [notice] 23#23: gracefully shutting down
+2023/09/03 13:12:29 [notice] 22#22: gracefully shutting down
+2023/09/03 13:12:29 [notice] 25#25: gracefully shutting down
+2023/09/03 13:12:29 [notice] 27#27: gracefully shutting down
+2023/09/03 13:12:29 [notice] 20#20: exiting
+2023/09/03 13:12:29 [notice] 21#21: exiting
+2023/09/03 13:12:29 [notice] 24#24: exiting
+2023/09/03 13:12:29 [notice] 26#26: exiting
+2023/09/03 13:12:29 [notice] 23#23: exiting
+2023/09/03 13:12:29 [notice] 22#22: exiting
+2023/09/03 13:12:29 [notice] 25#25: exiting
+2023/09/03 13:12:29 [notice] 27#27: exiting
+2023/09/03 13:12:29 [notice] 20#20: exit
+2023/09/03 13:12:29 [notice] 21#21: exit
+2023/09/03 13:12:29 [notice] 24#24: exit
+2023/09/03 13:12:29 [notice] 26#26: exit
+2023/09/03 13:12:29 [notice] 23#23: exit
+2023/09/03 13:12:29 [notice] 22#22: exit
+2023/09/03 13:12:29 [notice] 25#25: exit
+2023/09/03 13:12:29 [notice] 27#27: exit
+2023/09/03 13:12:29 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/03 13:12:29 [notice] 1#1: worker process 20 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: worker process 25 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:12:29 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/03 13:12:29 [notice] 1#1: worker process 21 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: worker process 22 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: worker process 24 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:12:29 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/03 13:12:29 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/03 13:12:29 [notice] 1#1: worker process 26 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:12:29 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/03 13:12:29 [notice] 1#1: worker process 23 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: worker process 27 exited with code 0
+2023/09/03 13:12:29 [notice] 1#1: exit
+2023/09/03 13:16:19 [notice] 1#1: using the "epoll" event method
+2023/09/03 13:16:19 [notice] 1#1: nginx/1.25.2
+2023/09/03 13:16:19 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/03 13:16:19 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/03 13:16:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/03 13:16:19 [notice] 1#1: start worker processes
+2023/09/03 13:16:19 [notice] 1#1: start worker process 20
+2023/09/03 13:16:19 [notice] 1#1: start worker process 21
+2023/09/03 13:16:19 [notice] 1#1: start worker process 22
+2023/09/03 13:16:19 [notice] 1#1: start worker process 23
+2023/09/03 13:16:19 [notice] 1#1: start worker process 24
+2023/09/03 13:16:19 [notice] 1#1: start worker process 25
+2023/09/03 13:16:19 [notice] 1#1: start worker process 26
+2023/09/03 13:16:19 [notice] 1#1: start worker process 27
+2023/09/03 13:16:26 [error] 22#22: *4 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:16:32 [error] 22#22: *4 open() "/home/app/web/staticfiles/css/assetsion-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assetsion-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:16:49 [error] 21#21: *3 open() "/home/app/web/staticfiles/css/assetsion-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assetsion-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:16:50 [error] 21#21: *3 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:19:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/03 13:19:24 [notice] 21#21: gracefully shutting down
+2023/09/03 13:19:24 [notice] 20#20: gracefully shutting down
+2023/09/03 13:19:24 [notice] 22#22: gracefully shutting down
+2023/09/03 13:19:24 [notice] 23#23: gracefully shutting down
+2023/09/03 13:19:24 [notice] 23#23: exiting
+2023/09/03 13:19:24 [notice] 26#26: gracefully shutting down
+2023/09/03 13:19:24 [notice] 24#24: gracefully shutting down
+2023/09/03 13:19:24 [notice] 24#24: exiting
+2023/09/03 13:19:24 [notice] 25#25: gracefully shutting down
+2023/09/03 13:19:24 [notice] 27#27: gracefully shutting down
+2023/09/03 13:19:24 [notice] 21#21: exiting
+2023/09/03 13:19:24 [notice] 20#20: exiting
+2023/09/03 13:19:24 [notice] 22#22: exiting
+2023/09/03 13:19:24 [notice] 23#23: exit
+2023/09/03 13:19:24 [notice] 26#26: exiting
+2023/09/03 13:19:24 [notice] 24#24: exit
+2023/09/03 13:19:24 [notice] 25#25: exiting
+2023/09/03 13:19:24 [notice] 27#27: exiting
+2023/09/03 13:19:24 [notice] 21#21: exit
+2023/09/03 13:19:24 [notice] 20#20: exit
+2023/09/03 13:19:24 [notice] 22#22: exit
+2023/09/03 13:19:24 [notice] 26#26: exit
+2023/09/03 13:19:24 [notice] 25#25: exit
+2023/09/03 13:19:24 [notice] 27#27: exit
+2023/09/03 13:19:24 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/03 13:19:24 [notice] 1#1: worker process 24 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:19:24 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/03 13:19:24 [notice] 1#1: worker process 27 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:19:24 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/03 13:19:24 [notice] 1#1: worker process 20 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: worker process 21 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: worker process 23 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: worker process 25 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:19:24 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/03 13:19:24 [notice] 1#1: worker process 26 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:19:24 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/03 13:19:24 [notice] 1#1: worker process 22 exited with code 0
+2023/09/03 13:19:24 [notice] 1#1: exit
+2023/09/03 13:19:27 [notice] 1#1: using the "epoll" event method
+2023/09/03 13:19:27 [notice] 1#1: nginx/1.25.2
+2023/09/03 13:19:27 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/03 13:19:27 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/03 13:19:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/03 13:19:27 [notice] 1#1: start worker processes
+2023/09/03 13:19:27 [notice] 1#1: start worker process 20
+2023/09/03 13:19:27 [notice] 1#1: start worker process 21
+2023/09/03 13:19:27 [notice] 1#1: start worker process 22
+2023/09/03 13:19:27 [notice] 1#1: start worker process 23
+2023/09/03 13:19:27 [notice] 1#1: start worker process 24
+2023/09/03 13:19:27 [notice] 1#1: start worker process 25
+2023/09/03 13:19:27 [notice] 1#1: start worker process 26
+2023/09/03 13:19:27 [notice] 1#1: start worker process 27
+2023/09/03 13:19:35 [error] 24#24: *5 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:20:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/03 13:20:03 [notice] 20#20: gracefully shutting down
+2023/09/03 13:20:03 [notice] 21#21: gracefully shutting down
+2023/09/03 13:20:03 [notice] 22#22: gracefully shutting down
+2023/09/03 13:20:03 [notice] 22#22: exiting
+2023/09/03 13:20:03 [notice] 26#26: gracefully shutting down
+2023/09/03 13:20:03 [notice] 26#26: exiting
+2023/09/03 13:20:03 [notice] 23#23: gracefully shutting down
+2023/09/03 13:20:03 [notice] 25#25: gracefully shutting down
+2023/09/03 13:20:03 [notice] 24#24: gracefully shutting down
+2023/09/03 13:20:03 [notice] 27#27: gracefully shutting down
+2023/09/03 13:20:03 [notice] 27#27: exiting
+2023/09/03 13:20:03 [notice] 20#20: exiting
+2023/09/03 13:20:03 [notice] 21#21: exiting
+2023/09/03 13:20:03 [notice] 22#22: exit
+2023/09/03 13:20:03 [notice] 26#26: exit
+2023/09/03 13:20:03 [notice] 23#23: exiting
+2023/09/03 13:20:03 [notice] 25#25: exiting
+2023/09/03 13:20:03 [notice] 24#24: exiting
+2023/09/03 13:20:03 [notice] 27#27: exit
+2023/09/03 13:20:03 [notice] 20#20: exit
+2023/09/03 13:20:03 [notice] 21#21: exit
+2023/09/03 13:20:03 [notice] 23#23: exit
+2023/09/03 13:20:03 [notice] 25#25: exit
+2023/09/03 13:20:03 [notice] 24#24: exit
+2023/09/03 13:20:03 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/03 13:20:03 [notice] 1#1: worker process 21 exited with code 0
+2023/09/03 13:20:03 [notice] 1#1: worker process 23 exited with code 0
+2023/09/03 13:20:03 [notice] 1#1: worker process 24 exited with code 0
+2023/09/03 13:20:03 [notice] 1#1: worker process 25 exited with code 0
+2023/09/03 13:20:03 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:20:04 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/03 13:20:04 [notice] 1#1: worker process 20 exited with code 0
+2023/09/03 13:20:04 [notice] 1#1: worker process 22 exited with code 0
+2023/09/03 13:20:04 [notice] 1#1: worker process 26 exited with code 0
+2023/09/03 13:20:04 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/03 13:20:04 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/03 13:20:04 [notice] 1#1: worker process 27 exited with code 0
+2023/09/03 13:20:04 [notice] 1#1: exit
+2023/09/03 13:20:06 [notice] 1#1: using the "epoll" event method
+2023/09/03 13:20:06 [notice] 1#1: nginx/1.25.2
+2023/09/03 13:20:06 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/03 13:20:06 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/03 13:20:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/03 13:20:06 [notice] 1#1: start worker processes
+2023/09/03 13:20:06 [notice] 1#1: start worker process 20
+2023/09/03 13:20:06 [notice] 1#1: start worker process 21
+2023/09/03 13:20:06 [notice] 1#1: start worker process 22
+2023/09/03 13:20:06 [notice] 1#1: start worker process 23
+2023/09/03 13:20:06 [notice] 1#1: start worker process 24
+2023/09/03 13:20:06 [notice] 1#1: start worker process 25
+2023/09/03 13:20:06 [notice] 1#1: start worker process 26
+2023/09/03 13:20:06 [notice] 1#1: start worker process 27
+2023/09/03 13:20:14 [error] 20#20: *1 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:24:38 [error] 23#23: *5 open() "/home/app/web/staticfiles/css/assetsion-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assetsion-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:24:42 [error] 22#22: *4 open() "/home/app/web/staticfiles/css/assetsjpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assetsjpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:24:45 [error] 22#22: *4 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/03 13:43:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/03 13:43:14 [notice] 22#22: gracefully shutting down
+2023/09/03 13:43:14 [notice] 20#20: gracefully shutting down
+2023/09/03 13:43:14 [notice] 20#20: exiting
+2023/09/03 13:43:14 [notice] 21#21: gracefully shutting down
+2023/09/03 13:43:14 [notice] 26#26: gracefully shutting down
+2023/09/03 13:43:14 [notice] 27#27: gracefully shutting down
+2023/09/03 13:43:14 [notice] 23#23: gracefully shutting down
+2023/09/03 13:43:14 [notice] 24#24: gracefully shutting down
+2023/09/03 13:43:14 [notice] 25#25: gracefully shutting down
+2023/09/03 13:43:14 [notice] 22#22: exiting
+2023/09/03 13:43:14 [notice] 20#20: exit
+2023/09/03 13:43:14 [notice] 21#21: exiting
+2023/09/03 13:43:14 [notice] 26#26: exiting
+2023/09/03 13:43:14 [notice] 27#27: exiting
+2023/09/03 13:43:14 [notice] 23#23: exiting
+2023/09/03 13:43:14 [notice] 24#24: exiting
+2023/09/03 13:43:14 [notice] 25#25: exiting
+2023/09/03 13:43:14 [notice] 22#22: exit
+2023/09/03 13:43:14 [notice] 21#21: exit
+2023/09/03 13:43:14 [notice] 26#26: exit
+2023/09/03 13:43:14 [notice] 27#27: exit
+2023/09/03 13:43:14 [notice] 23#23: exit
+2023/09/03 13:43:14 [notice] 24#24: exit
+2023/09/03 13:43:14 [notice] 25#25: exit
+2023/09/03 13:43:14 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/03 13:43:14 [notice] 1#1: worker process 20 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: worker process 21 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: worker process 22 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: worker process 23 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: worker process 24 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: worker process 25 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: worker process 26 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: worker process 27 exited with code 0
+2023/09/03 13:43:14 [notice] 1#1: exit
+2023/09/04 12:09:51 [notice] 1#1: using the "epoll" event method
+2023/09/04 12:09:51 [notice] 1#1: nginx/1.25.2
+2023/09/04 12:09:51 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 12:09:51 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 12:09:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 12:09:51 [notice] 1#1: start worker processes
+2023/09/04 12:09:51 [notice] 1#1: start worker process 20
+2023/09/04 12:09:51 [notice] 1#1: start worker process 21
+2023/09/04 12:09:51 [notice] 1#1: start worker process 22
+2023/09/04 12:09:51 [notice] 1#1: start worker process 23
+2023/09/04 12:09:51 [notice] 1#1: start worker process 24
+2023/09/04 12:09:51 [notice] 1#1: start worker process 25
+2023/09/04 12:09:51 [notice] 1#1: start worker process 26
+2023/09/04 12:09:51 [notice] 1#1: start worker process 27
+2023/09/04 12:10:00 [error] 20#20: *1 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:11:27 [error] 24#24: *6 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:11:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 12:11:33 [notice] 20#20: gracefully shutting down
+2023/09/04 12:11:33 [notice] 21#21: gracefully shutting down
+2023/09/04 12:11:33 [notice] 22#22: gracefully shutting down
+2023/09/04 12:11:33 [notice] 23#23: gracefully shutting down
+2023/09/04 12:11:33 [notice] 25#25: gracefully shutting down
+2023/09/04 12:11:33 [notice] 24#24: gracefully shutting down
+2023/09/04 12:11:33 [notice] 26#26: gracefully shutting down
+2023/09/04 12:11:33 [notice] 27#27: gracefully shutting down
+2023/09/04 12:11:33 [notice] 20#20: exiting
+2023/09/04 12:11:33 [notice] 21#21: exiting
+2023/09/04 12:11:33 [notice] 22#22: exiting
+2023/09/04 12:11:33 [notice] 23#23: exiting
+2023/09/04 12:11:33 [notice] 24#24: exiting
+2023/09/04 12:11:33 [notice] 26#26: exiting
+2023/09/04 12:11:33 [notice] 27#27: exiting
+2023/09/04 12:11:33 [notice] 20#20: exit
+2023/09/04 12:11:33 [notice] 21#21: exit
+2023/09/04 12:11:33 [notice] 22#22: exit
+2023/09/04 12:11:33 [notice] 23#23: exit
+2023/09/04 12:11:33 [notice] 24#24: exit
+2023/09/04 12:11:33 [notice] 26#26: exit
+2023/09/04 12:11:33 [notice] 27#27: exit
+2023/09/04 12:11:33 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 12:11:33 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 12:11:33 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 12:11:33 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:11:33 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 12:11:33 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 12:11:33 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:11:33 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 12:11:33 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 12:11:33 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 12:11:33 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:11:33 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 12:11:33 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 12:11:33 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:11:33 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 12:11:33 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 12:11:33 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:12:03 [notice] 1#1: using the "epoll" event method
+2023/09/04 12:12:03 [notice] 1#1: nginx/1.25.2
+2023/09/04 12:12:03 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 12:12:03 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 12:12:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 12:12:03 [notice] 1#1: start worker processes
+2023/09/04 12:12:03 [notice] 1#1: start worker process 20
+2023/09/04 12:12:03 [notice] 1#1: start worker process 21
+2023/09/04 12:12:03 [notice] 1#1: start worker process 22
+2023/09/04 12:12:03 [notice] 1#1: start worker process 23
+2023/09/04 12:12:03 [notice] 1#1: start worker process 24
+2023/09/04 12:12:03 [notice] 1#1: start worker process 25
+2023/09/04 12:12:03 [notice] 1#1: start worker process 26
+2023/09/04 12:12:03 [notice] 1#1: start worker process 27
+2023/09/04 12:13:30 [error] 22#22: *4 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:43:46 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 12:43:46 [notice] 20#20: gracefully shutting down
+2023/09/04 12:43:46 [notice] 21#21: gracefully shutting down
+2023/09/04 12:43:46 [notice] 22#22: gracefully shutting down
+2023/09/04 12:43:46 [notice] 23#23: gracefully shutting down
+2023/09/04 12:43:46 [notice] 24#24: gracefully shutting down
+2023/09/04 12:43:46 [notice] 26#26: gracefully shutting down
+2023/09/04 12:43:46 [notice] 25#25: gracefully shutting down
+2023/09/04 12:43:46 [notice] 27#27: gracefully shutting down
+2023/09/04 12:43:46 [notice] 20#20: exiting
+2023/09/04 12:43:46 [notice] 21#21: exiting
+2023/09/04 12:43:46 [notice] 22#22: exiting
+2023/09/04 12:43:46 [notice] 23#23: exiting
+2023/09/04 12:43:46 [notice] 24#24: exiting
+2023/09/04 12:43:46 [notice] 26#26: exiting
+2023/09/04 12:43:46 [notice] 25#25: exiting
+2023/09/04 12:43:46 [notice] 27#27: exiting
+2023/09/04 12:43:46 [notice] 20#20: exit
+2023/09/04 12:43:46 [notice] 21#21: exit
+2023/09/04 12:43:46 [notice] 22#22: exit
+2023/09/04 12:43:46 [notice] 23#23: exit
+2023/09/04 12:43:46 [notice] 24#24: exit
+2023/09/04 12:43:46 [notice] 26#26: exit
+2023/09/04 12:43:46 [notice] 25#25: exit
+2023/09/04 12:43:46 [notice] 27#27: exit
+2023/09/04 12:43:46 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 12:43:46 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:43:46 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 12:43:46 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:43:46 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 12:43:46 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:43:46 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 12:43:46 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:43:46 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 12:43:46 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 12:43:46 [notice] 1#1: exit
+2023/09/04 12:43:48 [notice] 1#1: using the "epoll" event method
+2023/09/04 12:43:48 [notice] 1#1: nginx/1.25.2
+2023/09/04 12:43:48 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 12:43:48 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 12:43:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 12:43:48 [notice] 1#1: start worker processes
+2023/09/04 12:43:48 [notice] 1#1: start worker process 20
+2023/09/04 12:43:48 [notice] 1#1: start worker process 21
+2023/09/04 12:43:48 [notice] 1#1: start worker process 22
+2023/09/04 12:43:48 [notice] 1#1: start worker process 23
+2023/09/04 12:43:48 [notice] 1#1: start worker process 24
+2023/09/04 12:43:48 [notice] 1#1: start worker process 25
+2023/09/04 12:43:48 [notice] 1#1: start worker process 26
+2023/09/04 12:43:48 [notice] 1#1: start worker process 27
+2023/09/04 12:43:55 [error] 20#20: *1 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:44:09 [error] 23#23: *6 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:52:35 [error] 21#21: *7 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:52:38 [error] 21#21: *7 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:52:50 [error] 21#21: *7 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:52:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 12:52:56 [notice] 20#20: gracefully shutting down
+2023/09/04 12:52:56 [notice] 21#21: gracefully shutting down
+2023/09/04 12:52:56 [notice] 22#22: gracefully shutting down
+2023/09/04 12:52:56 [notice] 23#23: gracefully shutting down
+2023/09/04 12:52:56 [notice] 24#24: gracefully shutting down
+2023/09/04 12:52:56 [notice] 25#25: gracefully shutting down
+2023/09/04 12:52:56 [notice] 26#26: gracefully shutting down
+2023/09/04 12:52:56 [notice] 27#27: gracefully shutting down
+2023/09/04 12:52:56 [notice] 20#20: exiting
+2023/09/04 12:52:56 [notice] 21#21: exiting
+2023/09/04 12:52:56 [notice] 22#22: exiting
+2023/09/04 12:52:56 [notice] 23#23: exiting
+2023/09/04 12:52:56 [notice] 24#24: exiting
+2023/09/04 12:52:56 [notice] 25#25: exiting
+2023/09/04 12:52:56 [notice] 26#26: exiting
+2023/09/04 12:52:56 [notice] 27#27: exiting
+2023/09/04 12:52:56 [notice] 20#20: exit
+2023/09/04 12:52:56 [notice] 21#21: exit
+2023/09/04 12:52:56 [notice] 22#22: exit
+2023/09/04 12:52:56 [notice] 23#23: exit
+2023/09/04 12:52:56 [notice] 24#24: exit
+2023/09/04 12:52:56 [notice] 25#25: exit
+2023/09/04 12:52:56 [notice] 26#26: exit
+2023/09/04 12:52:56 [notice] 27#27: exit
+2023/09/04 12:52:56 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 12:52:56 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:52:56 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 12:52:56 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 12:52:56 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 12:52:56 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 12:52:56 [notice] 1#1: exit
+2023/09/04 12:52:57 [notice] 1#1: using the "epoll" event method
+2023/09/04 12:52:57 [notice] 1#1: nginx/1.25.2
+2023/09/04 12:52:57 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 12:52:57 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 12:52:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 12:52:57 [notice] 1#1: start worker processes
+2023/09/04 12:52:57 [notice] 1#1: start worker process 20
+2023/09/04 12:52:57 [notice] 1#1: start worker process 21
+2023/09/04 12:52:57 [notice] 1#1: start worker process 22
+2023/09/04 12:52:57 [notice] 1#1: start worker process 23
+2023/09/04 12:52:57 [notice] 1#1: start worker process 24
+2023/09/04 12:52:57 [notice] 1#1: start worker process 25
+2023/09/04 12:52:57 [notice] 1#1: start worker process 26
+2023/09/04 12:52:57 [notice] 1#1: start worker process 27
+2023/09/04 12:53:04 [error] 22#22: *4 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:53:45 [error] 22#22: *4 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:54:09 [error] 22#22: *4 open() "/home/app/web/staticfiles/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 12:54:11 [error] 25#25: *14 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:00:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 13:00:01 [notice] 20#20: gracefully shutting down
+2023/09/04 13:00:01 [notice] 20#20: exiting
+2023/09/04 13:00:01 [notice] 24#24: gracefully shutting down
+2023/09/04 13:00:01 [notice] 21#21: gracefully shutting down
+2023/09/04 13:00:01 [notice] 22#22: gracefully shutting down
+2023/09/04 13:00:01 [notice] 26#26: gracefully shutting down
+2023/09/04 13:00:01 [notice] 25#25: gracefully shutting down
+2023/09/04 13:00:01 [notice] 27#27: gracefully shutting down
+2023/09/04 13:00:01 [notice] 27#27: exiting
+2023/09/04 13:00:01 [notice] 23#23: gracefully shutting down
+2023/09/04 13:00:01 [notice] 20#20: exit
+2023/09/04 13:00:01 [notice] 24#24: exiting
+2023/09/04 13:00:01 [notice] 21#21: exiting
+2023/09/04 13:00:01 [notice] 22#22: exiting
+2023/09/04 13:00:01 [notice] 26#26: exiting
+2023/09/04 13:00:01 [notice] 25#25: exiting
+2023/09/04 13:00:01 [notice] 27#27: exit
+2023/09/04 13:00:01 [notice] 23#23: exiting
+2023/09/04 13:00:01 [notice] 24#24: exit
+2023/09/04 13:00:01 [notice] 21#21: exit
+2023/09/04 13:00:01 [notice] 22#22: exit
+2023/09/04 13:00:01 [notice] 26#26: exit
+2023/09/04 13:00:01 [notice] 25#25: exit
+2023/09/04 13:00:01 [notice] 23#23: exit
+2023/09/04 13:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 13:00:02 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 13:00:02 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 13:00:02 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 13:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 13:00:02 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 13:00:02 [notice] 1#1: exit
+2023/09/04 13:00:04 [notice] 1#1: using the "epoll" event method
+2023/09/04 13:00:04 [notice] 1#1: nginx/1.25.2
+2023/09/04 13:00:04 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 13:00:04 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 13:00:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 13:00:04 [notice] 1#1: start worker processes
+2023/09/04 13:00:04 [notice] 1#1: start worker process 20
+2023/09/04 13:00:04 [notice] 1#1: start worker process 21
+2023/09/04 13:00:04 [notice] 1#1: start worker process 22
+2023/09/04 13:00:04 [notice] 1#1: start worker process 23
+2023/09/04 13:00:04 [notice] 1#1: start worker process 24
+2023/09/04 13:00:04 [notice] 1#1: start worker process 25
+2023/09/04 13:00:04 [notice] 1#1: start worker process 26
+2023/09/04 13:00:04 [notice] 1#1: start worker process 27
+2023/09/04 13:00:46 [error] 20#20: *1 open() "/home/app/web/staticfiles/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:00:51 [error] 20#20: *1 open() "/home/app/web/staticfiles/css/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:01:09 [error] 20#20: *1 open() "/home/app/web/staticfiles/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static//web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:01:09 [error] 20#20: *1 open() "/home/app/web/staticfiles/a/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/a/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:01:10 [error] 20#20: *1 open() "/home/app/web/staticfiles/app/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/app/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:01:12 [error] 20#20: *1 open() "/home/app/web/staticfiles/app/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/app/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:01:24 [error] 20#20: *1 open() "/home/app/web/staticfiles/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:02:16 [error] 24#24: *16 open() "/home/app/web/staticfiles/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:02:31 [error] 24#24: *16 open() "/home/app/web/staticfiles/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:02:41 [error] 23#23: *15 open() "/home/app/web/staticfiles/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:02:48 [error] 23#23: *15 open() "/home/app/web/staticfiles/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:03:01 [error] 23#23: *15 open() "/home/app/web/staticfiles/css/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:03:36 [error] 24#24: *16 open() "/home/app/web/staticfiles/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:05:08 [error] 25#25: *42 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:05:18 [error] 25#25: *42 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:05:18 [error] 25#25: *42 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:05:31 [error] 25#25: *42 open() "/home/app/web/staticfiles/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:05:48 [error] 27#27: *58 open() "/home/app/web/staticfiles/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:06:26 [error] 27#27: *58 open() "/home/app/web/staticfiles/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:07:40 [error] 22#22: *65 open() "/home/app/web/staticfiles/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:08:36 [error] 22#22: *65 open() "/home/app/web/staticfiles/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81"
+2023/09/04 13:12:39 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:12:42 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:13:07 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:13:26 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:13:36 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/.../assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/.../assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:14:38 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/.../assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/.../assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:14:49 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/chown www-data:www-data /home/app/web/staticfiles/assets/img/about/about-bg.jp^[[3~" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/chown%20www-data:www-data%20/home/app/web/staticfiles/assets/img/about/about-bg.jp%5E[[3~ HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:15:29 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/home/app/web/staticfiles/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81"
+2023/09/04 13:15:42 [error] 20#20: *72 open() "/home/app/web/staticfiles/css/assets/img/about/about-bg.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets/img/about/about-bg.jpg HTTP/1.1", host: "localhost:81"
+2023/09/04 13:17:42 [error] 22#22: *91 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:18:13 [error] 22#22: *91 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:19:09 [error] 20#20: *103 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:21:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 13:21:32 [notice] 20#20: gracefully shutting down
+2023/09/04 13:21:32 [notice] 21#21: gracefully shutting down
+2023/09/04 13:21:32 [notice] 21#21: exiting
+2023/09/04 13:21:32 [notice] 22#22: gracefully shutting down
+2023/09/04 13:21:32 [notice] 23#23: gracefully shutting down
+2023/09/04 13:21:32 [notice] 24#24: gracefully shutting down
+2023/09/04 13:21:32 [notice] 25#25: gracefully shutting down
+2023/09/04 13:21:32 [notice] 27#27: gracefully shutting down
+2023/09/04 13:21:32 [notice] 27#27: exiting
+2023/09/04 13:21:32 [notice] 26#26: gracefully shutting down
+2023/09/04 13:21:32 [notice] 20#20: exiting
+2023/09/04 13:21:32 [notice] 21#21: exit
+2023/09/04 13:21:32 [notice] 22#22: exiting
+2023/09/04 13:21:32 [notice] 23#23: exiting
+2023/09/04 13:21:32 [notice] 24#24: exiting
+2023/09/04 13:21:32 [notice] 25#25: exiting
+2023/09/04 13:21:32 [notice] 27#27: exit
+2023/09/04 13:21:32 [notice] 26#26: exiting
+2023/09/04 13:21:32 [notice] 20#20: exit
+2023/09/04 13:21:32 [notice] 22#22: exit
+2023/09/04 13:21:32 [notice] 23#23: exit
+2023/09/04 13:21:32 [notice] 24#24: exit
+2023/09/04 13:21:32 [notice] 25#25: exit
+2023/09/04 13:21:32 [notice] 26#26: exit
+2023/09/04 13:21:32 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 13:21:32 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:21:32 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 13:21:32 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 13:21:32 [notice] 1#1: exit
+2023/09/04 13:21:59 [notice] 1#1: using the "epoll" event method
+2023/09/04 13:21:59 [notice] 1#1: nginx/1.25.2
+2023/09/04 13:21:59 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 13:21:59 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 13:21:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 13:21:59 [notice] 1#1: start worker processes
+2023/09/04 13:21:59 [notice] 1#1: start worker process 20
+2023/09/04 13:21:59 [notice] 1#1: start worker process 21
+2023/09/04 13:21:59 [notice] 1#1: start worker process 22
+2023/09/04 13:21:59 [notice] 1#1: start worker process 23
+2023/09/04 13:21:59 [notice] 1#1: start worker process 24
+2023/09/04 13:21:59 [notice] 1#1: start worker process 25
+2023/09/04 13:21:59 [notice] 1#1: start worker process 26
+2023/09/04 13:21:59 [notice] 1#1: start worker process 27
+2023/09/04 13:22:11 [error] 20#20: *1 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:22:30 [error] 22#22: *7 open() "/home/app/web/staticfiles/css/assets.png" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.png HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:22:35 [error] 22#22: *7 open() "/home/app/web/staticfiles/css/assets.jpg" failed (2: No such file or directory), client: 172.30.0.1, server: examproject.tk, request: "GET /static/css/assets.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/static/css/styles.css"
+2023/09/04 13:25:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 13:25:49 [notice] 20#20: gracefully shutting down
+2023/09/04 13:25:49 [notice] 21#21: gracefully shutting down
+2023/09/04 13:25:49 [notice] 21#21: exiting
+2023/09/04 13:25:49 [notice] 22#22: gracefully shutting down
+2023/09/04 13:25:49 [notice] 23#23: gracefully shutting down
+2023/09/04 13:25:49 [notice] 25#25: gracefully shutting down
+2023/09/04 13:25:49 [notice] 24#24: gracefully shutting down
+2023/09/04 13:25:49 [notice] 26#26: gracefully shutting down
+2023/09/04 13:25:49 [notice] 27#27: gracefully shutting down
+2023/09/04 13:25:49 [notice] 27#27: exiting
+2023/09/04 13:25:49 [notice] 20#20: exiting
+2023/09/04 13:25:49 [notice] 21#21: exit
+2023/09/04 13:25:49 [notice] 22#22: exiting
+2023/09/04 13:25:49 [notice] 23#23: exiting
+2023/09/04 13:25:49 [notice] 25#25: exiting
+2023/09/04 13:25:49 [notice] 24#24: exiting
+2023/09/04 13:25:49 [notice] 26#26: exiting
+2023/09/04 13:25:49 [notice] 27#27: exit
+2023/09/04 13:25:49 [notice] 20#20: exit
+2023/09/04 13:25:49 [notice] 22#22: exit
+2023/09/04 13:25:49 [notice] 23#23: exit
+2023/09/04 13:25:49 [notice] 25#25: exit
+2023/09/04 13:25:49 [notice] 24#24: exit
+2023/09/04 13:25:49 [notice] 26#26: exit
+2023/09/04 13:25:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 13:25:49 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 13:25:49 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:25:49 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 13:25:49 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 13:25:49 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:25:49 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 13:25:49 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 13:25:49 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 13:25:49 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 13:25:49 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 13:25:49 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 13:25:50 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:25:50 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 13:25:50 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 13:25:50 [notice] 1#1: exit
+2023/09/04 13:26:08 [notice] 1#1: using the "epoll" event method
+2023/09/04 13:26:08 [notice] 1#1: nginx/1.25.2
+2023/09/04 13:26:08 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 13:26:08 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 13:26:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 13:26:08 [notice] 1#1: start worker processes
+2023/09/04 13:26:08 [notice] 1#1: start worker process 20
+2023/09/04 13:26:08 [notice] 1#1: start worker process 21
+2023/09/04 13:26:08 [notice] 1#1: start worker process 22
+2023/09/04 13:26:08 [notice] 1#1: start worker process 23
+2023/09/04 13:26:08 [notice] 1#1: start worker process 24
+2023/09/04 13:26:08 [notice] 1#1: start worker process 25
+2023/09/04 13:26:08 [notice] 1#1: start worker process 26
+2023/09/04 13:26:08 [notice] 1#1: start worker process 27
+2023/09/04 13:28:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 13:28:49 [notice] 20#20: gracefully shutting down
+2023/09/04 13:28:49 [notice] 21#21: gracefully shutting down
+2023/09/04 13:28:49 [notice] 22#22: gracefully shutting down
+2023/09/04 13:28:49 [notice] 23#23: gracefully shutting down
+2023/09/04 13:28:49 [notice] 25#25: gracefully shutting down
+2023/09/04 13:28:49 [notice] 25#25: exiting
+2023/09/04 13:28:49 [notice] 24#24: gracefully shutting down
+2023/09/04 13:28:49 [notice] 26#26: gracefully shutting down
+2023/09/04 13:28:49 [notice] 26#26: exiting
+2023/09/04 13:28:49 [notice] 27#27: gracefully shutting down
+2023/09/04 13:28:49 [notice] 20#20: exiting
+2023/09/04 13:28:49 [notice] 21#21: exiting
+2023/09/04 13:28:49 [notice] 22#22: exiting
+2023/09/04 13:28:49 [notice] 23#23: exiting
+2023/09/04 13:28:49 [notice] 25#25: exit
+2023/09/04 13:28:49 [notice] 24#24: exiting
+2023/09/04 13:28:49 [notice] 26#26: exit
+2023/09/04 13:28:49 [notice] 27#27: exiting
+2023/09/04 13:28:49 [notice] 20#20: exit
+2023/09/04 13:28:49 [notice] 21#21: exit
+2023/09/04 13:28:49 [notice] 22#22: exit
+2023/09/04 13:28:49 [notice] 23#23: exit
+2023/09/04 13:28:49 [notice] 24#24: exit
+2023/09/04 13:28:49 [notice] 27#27: exit
+2023/09/04 13:28:49 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 13:28:49 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:28:49 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 13:28:49 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:28:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 13:28:49 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:28:49 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 13:28:49 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 13:28:49 [notice] 1#1: exit
+2023/09/04 13:29:01 [notice] 1#1: using the "epoll" event method
+2023/09/04 13:29:01 [notice] 1#1: nginx/1.25.2
+2023/09/04 13:29:01 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 13:29:01 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 13:29:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 13:29:01 [notice] 1#1: start worker processes
+2023/09/04 13:29:01 [notice] 1#1: start worker process 20
+2023/09/04 13:29:01 [notice] 1#1: start worker process 21
+2023/09/04 13:29:01 [notice] 1#1: start worker process 22
+2023/09/04 13:29:01 [notice] 1#1: start worker process 23
+2023/09/04 13:29:01 [notice] 1#1: start worker process 24
+2023/09/04 13:29:01 [notice] 1#1: start worker process 25
+2023/09/04 13:29:01 [notice] 1#1: start worker process 26
+2023/09/04 13:29:01 [notice] 1#1: start worker process 27
+2023/09/04 13:56:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 13:56:55 [notice] 20#20: gracefully shutting down
+2023/09/04 13:56:55 [notice] 21#21: gracefully shutting down
+2023/09/04 13:56:55 [notice] 22#22: gracefully shutting down
+2023/09/04 13:56:55 [notice] 23#23: gracefully shutting down
+2023/09/04 13:56:55 [notice] 24#24: gracefully shutting down
+2023/09/04 13:56:55 [notice] 24#24: exiting
+2023/09/04 13:56:55 [notice] 26#26: gracefully shutting down
+2023/09/04 13:56:55 [notice] 26#26: exiting
+2023/09/04 13:56:55 [notice] 27#27: gracefully shutting down
+2023/09/04 13:56:55 [notice] 27#27: exiting
+2023/09/04 13:56:55 [notice] 25#25: gracefully shutting down
+2023/09/04 13:56:55 [notice] 20#20: exiting
+2023/09/04 13:56:55 [notice] 21#21: exiting
+2023/09/04 13:56:55 [notice] 22#22: exiting
+2023/09/04 13:56:55 [notice] 23#23: exiting
+2023/09/04 13:56:55 [notice] 24#24: exit
+2023/09/04 13:56:55 [notice] 26#26: exit
+2023/09/04 13:56:55 [notice] 27#27: exit
+2023/09/04 13:56:55 [notice] 25#25: exiting
+2023/09/04 13:56:55 [notice] 20#20: exit
+2023/09/04 13:56:55 [notice] 21#21: exit
+2023/09/04 13:56:55 [notice] 22#22: exit
+2023/09/04 13:56:55 [notice] 23#23: exit
+2023/09/04 13:56:55 [notice] 25#25: exit
+2023/09/04 13:56:55 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 13:56:55 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 13:56:55 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 13:56:55 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 13:56:55 [notice] 1#1: exit
+2023/09/04 13:57:29 [notice] 1#1: using the "epoll" event method
+2023/09/04 13:57:29 [notice] 1#1: nginx/1.25.2
+2023/09/04 13:57:29 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 13:57:29 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 13:57:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 13:57:29 [notice] 1#1: start worker processes
+2023/09/04 13:57:29 [notice] 1#1: start worker process 20
+2023/09/04 13:57:29 [notice] 1#1: start worker process 21
+2023/09/04 13:57:29 [notice] 1#1: start worker process 22
+2023/09/04 13:57:29 [notice] 1#1: start worker process 23
+2023/09/04 13:57:29 [notice] 1#1: start worker process 24
+2023/09/04 13:57:29 [notice] 1#1: start worker process 25
+2023/09/04 13:57:29 [notice] 1#1: start worker process 26
+2023/09/04 13:57:29 [notice] 1#1: start worker process 27
+2023/09/04 14:00:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:00:01 [notice] 20#20: gracefully shutting down
+2023/09/04 14:00:01 [notice] 22#22: gracefully shutting down
+2023/09/04 14:00:01 [notice] 23#23: gracefully shutting down
+2023/09/04 14:00:01 [notice] 23#23: exiting
+2023/09/04 14:00:01 [notice] 21#21: gracefully shutting down
+2023/09/04 14:00:01 [notice] 24#24: gracefully shutting down
+2023/09/04 14:00:01 [notice] 26#26: gracefully shutting down
+2023/09/04 14:00:01 [notice] 25#25: gracefully shutting down
+2023/09/04 14:00:01 [notice] 27#27: gracefully shutting down
+2023/09/04 14:00:01 [notice] 20#20: exiting
+2023/09/04 14:00:01 [notice] 22#22: exiting
+2023/09/04 14:00:01 [notice] 23#23: exit
+2023/09/04 14:00:01 [notice] 21#21: exiting
+2023/09/04 14:00:01 [notice] 24#24: exiting
+2023/09/04 14:00:01 [notice] 26#26: exiting
+2023/09/04 14:00:01 [notice] 25#25: exiting
+2023/09/04 14:00:01 [notice] 27#27: exiting
+2023/09/04 14:00:01 [notice] 20#20: exit
+2023/09/04 14:00:01 [notice] 22#22: exit
+2023/09/04 14:00:01 [notice] 21#21: exit
+2023/09/04 14:00:01 [notice] 24#24: exit
+2023/09/04 14:00:01 [notice] 26#26: exit
+2023/09/04 14:00:01 [notice] 25#25: exit
+2023/09/04 14:00:01 [notice] 27#27: exit
+2023/09/04 14:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 14:00:02 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 14:00:02 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:00:02 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 14:00:02 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:00:02 [notice] 1#1: exit
+2023/09/04 14:01:14 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:01:14 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:01:14 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:01:14 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:01:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:01:14 [notice] 1#1: start worker processes
+2023/09/04 14:01:14 [notice] 1#1: start worker process 20
+2023/09/04 14:01:14 [notice] 1#1: start worker process 21
+2023/09/04 14:01:14 [notice] 1#1: start worker process 22
+2023/09/04 14:01:14 [notice] 1#1: start worker process 23
+2023/09/04 14:01:14 [notice] 1#1: start worker process 24
+2023/09/04 14:01:14 [notice] 1#1: start worker process 25
+2023/09/04 14:01:14 [notice] 1#1: start worker process 26
+2023/09/04 14:01:14 [notice] 1#1: start worker process 27
+2023/09/04 14:02:45 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:02:45 [notice] 20#20: gracefully shutting down
+2023/09/04 14:02:45 [notice] 21#21: gracefully shutting down
+2023/09/04 14:02:45 [notice] 22#22: gracefully shutting down
+2023/09/04 14:02:45 [notice] 23#23: gracefully shutting down
+2023/09/04 14:02:45 [notice] 24#24: gracefully shutting down
+2023/09/04 14:02:45 [notice] 25#25: gracefully shutting down
+2023/09/04 14:02:45 [notice] 26#26: gracefully shutting down
+2023/09/04 14:02:45 [notice] 26#26: exiting
+2023/09/04 14:02:45 [notice] 27#27: gracefully shutting down
+2023/09/04 14:02:45 [notice] 20#20: exiting
+2023/09/04 14:02:45 [notice] 21#21: exiting
+2023/09/04 14:02:45 [notice] 23#23: exiting
+2023/09/04 14:02:45 [notice] 24#24: exiting
+2023/09/04 14:02:45 [notice] 25#25: exiting
+2023/09/04 14:02:45 [notice] 26#26: exit
+2023/09/04 14:02:45 [notice] 27#27: exiting
+2023/09/04 14:02:45 [notice] 20#20: exit
+2023/09/04 14:02:45 [notice] 21#21: exit
+2023/09/04 14:02:45 [notice] 23#23: exit
+2023/09/04 14:02:45 [notice] 24#24: exit
+2023/09/04 14:02:45 [notice] 25#25: exit
+2023/09/04 14:02:45 [notice] 27#27: exit
+2023/09/04 14:02:45 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 14:02:45 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:02:45 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:02:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:02:45 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 14:02:45 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:02:45 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:02:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:02:45 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 14:02:45 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:02:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:02:45 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 14:02:45 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:02:45 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:02:45 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:02:45 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 14:02:50 [notice] 22#22: exiting
+2023/09/04 14:02:50 [notice] 22#22: exit
+2023/09/04 14:02:50 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 14:02:50 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:02:50 [notice] 1#1: exit
+2023/09/04 14:02:53 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:02:53 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:02:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:02:53 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:02:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:02:53 [notice] 1#1: start worker processes
+2023/09/04 14:02:53 [notice] 1#1: start worker process 20
+2023/09/04 14:02:53 [notice] 1#1: start worker process 21
+2023/09/04 14:02:53 [notice] 1#1: start worker process 22
+2023/09/04 14:02:53 [notice] 1#1: start worker process 23
+2023/09/04 14:02:53 [notice] 1#1: start worker process 24
+2023/09/04 14:02:53 [notice] 1#1: start worker process 25
+2023/09/04 14:02:53 [notice] 1#1: start worker process 26
+2023/09/04 14:02:53 [notice] 1#1: start worker process 27
+2023/09/04 14:05:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:05:32 [notice] 20#20: gracefully shutting down
+2023/09/04 14:05:32 [notice] 21#21: gracefully shutting down
+2023/09/04 14:05:32 [notice] 22#22: gracefully shutting down
+2023/09/04 14:05:32 [notice] 25#25: gracefully shutting down
+2023/09/04 14:05:32 [notice] 27#27: gracefully shutting down
+2023/09/04 14:05:32 [notice] 24#24: gracefully shutting down
+2023/09/04 14:05:32 [notice] 24#24: exiting
+2023/09/04 14:05:32 [notice] 26#26: gracefully shutting down
+2023/09/04 14:05:32 [notice] 23#23: gracefully shutting down
+2023/09/04 14:05:32 [notice] 20#20: exiting
+2023/09/04 14:05:32 [notice] 21#21: exiting
+2023/09/04 14:05:32 [notice] 22#22: exiting
+2023/09/04 14:05:32 [notice] 25#25: exiting
+2023/09/04 14:05:32 [notice] 27#27: exiting
+2023/09/04 14:05:32 [notice] 24#24: exit
+2023/09/04 14:05:32 [notice] 26#26: exiting
+2023/09/04 14:05:32 [notice] 23#23: exiting
+2023/09/04 14:05:32 [notice] 20#20: exit
+2023/09/04 14:05:32 [notice] 21#21: exit
+2023/09/04 14:05:32 [notice] 22#22: exit
+2023/09/04 14:05:32 [notice] 25#25: exit
+2023/09/04 14:05:32 [notice] 27#27: exit
+2023/09/04 14:05:32 [notice] 26#26: exit
+2023/09/04 14:05:32 [notice] 23#23: exit
+2023/09/04 14:05:32 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 14:05:32 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:05:32 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 14:05:32 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:05:32 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 14:05:32 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:05:32 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 14:05:32 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:05:32 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 14:05:32 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 14:05:32 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:05:32 [notice] 1#1: exit
+2023/09/04 14:05:47 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:05:47 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:05:47 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:05:47 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:05:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:05:47 [notice] 1#1: start worker processes
+2023/09/04 14:05:47 [notice] 1#1: start worker process 21
+2023/09/04 14:05:47 [notice] 1#1: start worker process 22
+2023/09/04 14:05:47 [notice] 1#1: start worker process 23
+2023/09/04 14:05:47 [notice] 1#1: start worker process 24
+2023/09/04 14:05:47 [notice] 1#1: start worker process 25
+2023/09/04 14:05:47 [notice] 1#1: start worker process 26
+2023/09/04 14:05:47 [notice] 1#1: start worker process 27
+2023/09/04 14:05:47 [notice] 1#1: start worker process 28
+2023/09/04 14:06:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:06:13 [notice] 21#21: gracefully shutting down
+2023/09/04 14:06:13 [notice] 22#22: gracefully shutting down
+2023/09/04 14:06:13 [notice] 22#22: exiting
+2023/09/04 14:06:13 [notice] 23#23: gracefully shutting down
+2023/09/04 14:06:13 [notice] 25#25: gracefully shutting down
+2023/09/04 14:06:13 [notice] 24#24: gracefully shutting down
+2023/09/04 14:06:13 [notice] 26#26: gracefully shutting down
+2023/09/04 14:06:13 [notice] 27#27: gracefully shutting down
+2023/09/04 14:06:13 [notice] 28#28: gracefully shutting down
+2023/09/04 14:06:13 [notice] 22#22: exit
+2023/09/04 14:06:13 [notice] 23#23: exiting
+2023/09/04 14:06:13 [notice] 25#25: exiting
+2023/09/04 14:06:13 [notice] 24#24: exiting
+2023/09/04 14:06:13 [notice] 26#26: exiting
+2023/09/04 14:06:13 [notice] 27#27: exiting
+2023/09/04 14:06:13 [notice] 28#28: exiting
+2023/09/04 14:06:13 [notice] 23#23: exit
+2023/09/04 14:06:13 [notice] 25#25: exit
+2023/09/04 14:06:13 [notice] 24#24: exit
+2023/09/04 14:06:13 [notice] 26#26: exit
+2023/09/04 14:06:13 [notice] 27#27: exit
+2023/09/04 14:06:13 [notice] 28#28: exit
+2023/09/04 14:06:13 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 14:06:13 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:06:13 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:06:13 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:06:13 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:06:13 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:06:13 [notice] 1#1: worker process 28 exited with code 0
+2023/09/04 14:06:13 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:06:13 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 14:06:13 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:06:13 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:06:26 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:06:26 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:06:26 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:06:26 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:06:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:06:26 [notice] 1#1: start worker processes
+2023/09/04 14:06:26 [notice] 1#1: start worker process 20
+2023/09/04 14:06:26 [notice] 1#1: start worker process 21
+2023/09/04 14:06:26 [notice] 1#1: start worker process 22
+2023/09/04 14:06:26 [notice] 1#1: start worker process 23
+2023/09/04 14:06:26 [notice] 1#1: start worker process 24
+2023/09/04 14:06:26 [notice] 1#1: start worker process 25
+2023/09/04 14:06:26 [notice] 1#1: start worker process 26
+2023/09/04 14:06:26 [notice] 1#1: start worker process 27
+2023/09/04 14:12:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:12:42 [notice] 20#20: gracefully shutting down
+2023/09/04 14:12:42 [notice] 21#21: gracefully shutting down
+2023/09/04 14:12:42 [notice] 22#22: gracefully shutting down
+2023/09/04 14:12:42 [notice] 23#23: gracefully shutting down
+2023/09/04 14:12:42 [notice] 25#25: gracefully shutting down
+2023/09/04 14:12:42 [notice] 26#26: gracefully shutting down
+2023/09/04 14:12:42 [notice] 27#27: gracefully shutting down
+2023/09/04 14:12:42 [notice] 24#24: gracefully shutting down
+2023/09/04 14:12:42 [notice] 20#20: exiting
+2023/09/04 14:12:42 [notice] 21#21: exiting
+2023/09/04 14:12:42 [notice] 22#22: exiting
+2023/09/04 14:12:42 [notice] 23#23: exiting
+2023/09/04 14:12:42 [notice] 25#25: exiting
+2023/09/04 14:12:42 [notice] 26#26: exiting
+2023/09/04 14:12:42 [notice] 27#27: exiting
+2023/09/04 14:12:42 [notice] 24#24: exiting
+2023/09/04 14:12:42 [notice] 20#20: exit
+2023/09/04 14:12:42 [notice] 21#21: exit
+2023/09/04 14:12:42 [notice] 22#22: exit
+2023/09/04 14:12:42 [notice] 23#23: exit
+2023/09/04 14:12:42 [notice] 25#25: exit
+2023/09/04 14:12:42 [notice] 26#26: exit
+2023/09/04 14:12:42 [notice] 27#27: exit
+2023/09/04 14:12:42 [notice] 24#24: exit
+2023/09/04 14:12:43 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 14:12:43 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:12:43 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 14:12:43 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:12:43 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 14:12:43 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:12:43 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 14:12:43 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:12:43 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 14:12:43 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:12:43 [notice] 1#1: exit
+2023/09/04 14:12:45 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:12:45 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:12:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:12:45 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:12:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:12:45 [notice] 1#1: start worker processes
+2023/09/04 14:12:45 [notice] 1#1: start worker process 20
+2023/09/04 14:12:45 [notice] 1#1: start worker process 21
+2023/09/04 14:12:45 [notice] 1#1: start worker process 22
+2023/09/04 14:12:45 [notice] 1#1: start worker process 23
+2023/09/04 14:12:45 [notice] 1#1: start worker process 24
+2023/09/04 14:12:45 [notice] 1#1: start worker process 25
+2023/09/04 14:12:45 [notice] 1#1: start worker process 26
+2023/09/04 14:12:45 [notice] 1#1: start worker process 27
+2023/09/04 14:26:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:26:32 [notice] 21#21: gracefully shutting down
+2023/09/04 14:26:32 [notice] 20#20: gracefully shutting down
+2023/09/04 14:26:32 [notice] 22#22: gracefully shutting down
+2023/09/04 14:26:32 [notice] 25#25: gracefully shutting down
+2023/09/04 14:26:32 [notice] 26#26: gracefully shutting down
+2023/09/04 14:26:32 [notice] 27#27: gracefully shutting down
+2023/09/04 14:26:32 [notice] 24#24: gracefully shutting down
+2023/09/04 14:26:32 [notice] 23#23: gracefully shutting down
+2023/09/04 14:26:32 [notice] 21#21: exiting
+2023/09/04 14:26:32 [notice] 20#20: exiting
+2023/09/04 14:26:32 [notice] 22#22: exiting
+2023/09/04 14:26:32 [notice] 25#25: exiting
+2023/09/04 14:26:32 [notice] 26#26: exiting
+2023/09/04 14:26:32 [notice] 27#27: exiting
+2023/09/04 14:26:32 [notice] 24#24: exiting
+2023/09/04 14:26:32 [notice] 23#23: exiting
+2023/09/04 14:26:32 [notice] 21#21: exit
+2023/09/04 14:26:32 [notice] 20#20: exit
+2023/09/04 14:26:32 [notice] 22#22: exit
+2023/09/04 14:26:32 [notice] 25#25: exit
+2023/09/04 14:26:32 [notice] 26#26: exit
+2023/09/04 14:26:32 [notice] 27#27: exit
+2023/09/04 14:26:32 [notice] 24#24: exit
+2023/09/04 14:26:32 [notice] 23#23: exit
+2023/09/04 14:26:32 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 14:26:32 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:26:32 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 14:26:32 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:26:32 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 14:26:32 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:26:32 [notice] 1#1: exit
+2023/09/04 14:26:34 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:26:34 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:26:34 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:26:34 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:26:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:26:34 [notice] 1#1: start worker processes
+2023/09/04 14:26:34 [notice] 1#1: start worker process 20
+2023/09/04 14:26:34 [notice] 1#1: start worker process 21
+2023/09/04 14:26:34 [notice] 1#1: start worker process 22
+2023/09/04 14:26:34 [notice] 1#1: start worker process 23
+2023/09/04 14:26:34 [notice] 1#1: start worker process 24
+2023/09/04 14:26:34 [notice] 1#1: start worker process 25
+2023/09/04 14:26:34 [notice] 1#1: start worker process 26
+2023/09/04 14:26:34 [notice] 1#1: start worker process 27
+2023/09/04 14:29:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:29:14 [notice] 20#20: gracefully shutting down
+2023/09/04 14:29:14 [notice] 21#21: gracefully shutting down
+2023/09/04 14:29:14 [notice] 21#21: exiting
+2023/09/04 14:29:14 [notice] 22#22: gracefully shutting down
+2023/09/04 14:29:14 [notice] 26#26: gracefully shutting down
+2023/09/04 14:29:14 [notice] 27#27: gracefully shutting down
+2023/09/04 14:29:14 [notice] 23#23: gracefully shutting down
+2023/09/04 14:29:14 [notice] 24#24: gracefully shutting down
+2023/09/04 14:29:14 [notice] 25#25: gracefully shutting down
+2023/09/04 14:29:14 [notice] 20#20: exiting
+2023/09/04 14:29:14 [notice] 21#21: exit
+2023/09/04 14:29:14 [notice] 22#22: exiting
+2023/09/04 14:29:14 [notice] 26#26: exiting
+2023/09/04 14:29:14 [notice] 27#27: exiting
+2023/09/04 14:29:14 [notice] 23#23: exiting
+2023/09/04 14:29:14 [notice] 24#24: exiting
+2023/09/04 14:29:14 [notice] 25#25: exiting
+2023/09/04 14:29:14 [notice] 20#20: exit
+2023/09/04 14:29:14 [notice] 22#22: exit
+2023/09/04 14:29:14 [notice] 26#26: exit
+2023/09/04 14:29:14 [notice] 27#27: exit
+2023/09/04 14:29:14 [notice] 23#23: exit
+2023/09/04 14:29:14 [notice] 24#24: exit
+2023/09/04 14:29:14 [notice] 25#25: exit
+2023/09/04 14:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 14:29:15 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 14:29:15 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 14:29:15 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 14:29:15 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 14:29:15 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 14:29:15 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 14:29:15 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:29:15 [notice] 1#1: exit
+2023/09/04 14:29:15 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:29:15 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:29:15 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:29:15 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:29:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:29:15 [notice] 1#1: start worker processes
+2023/09/04 14:29:15 [notice] 1#1: start worker process 20
+2023/09/04 14:29:15 [notice] 1#1: start worker process 21
+2023/09/04 14:29:15 [notice] 1#1: start worker process 22
+2023/09/04 14:29:15 [notice] 1#1: start worker process 23
+2023/09/04 14:29:15 [notice] 1#1: start worker process 24
+2023/09/04 14:29:15 [notice] 1#1: start worker process 25
+2023/09/04 14:29:15 [notice] 1#1: start worker process 26
+2023/09/04 14:29:15 [notice] 1#1: start worker process 27
+2023/09/04 14:30:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:30:35 [notice] 20#20: gracefully shutting down
+2023/09/04 14:30:35 [notice] 21#21: gracefully shutting down
+2023/09/04 14:30:35 [notice] 21#21: exiting
+2023/09/04 14:30:35 [notice] 22#22: gracefully shutting down
+2023/09/04 14:30:35 [notice] 25#25: gracefully shutting down
+2023/09/04 14:30:35 [notice] 25#25: exiting
+2023/09/04 14:30:35 [notice] 23#23: gracefully shutting down
+2023/09/04 14:30:35 [notice] 26#26: gracefully shutting down
+2023/09/04 14:30:35 [notice] 24#24: gracefully shutting down
+2023/09/04 14:30:35 [notice] 27#27: gracefully shutting down
+2023/09/04 14:30:35 [notice] 20#20: exiting
+2023/09/04 14:30:35 [notice] 21#21: exit
+2023/09/04 14:30:35 [notice] 22#22: exiting
+2023/09/04 14:30:35 [notice] 25#25: exit
+2023/09/04 14:30:35 [notice] 23#23: exiting
+2023/09/04 14:30:35 [notice] 26#26: exiting
+2023/09/04 14:30:35 [notice] 24#24: exiting
+2023/09/04 14:30:35 [notice] 24#24: exit
+2023/09/04 14:30:35 [notice] 27#27: exiting
+2023/09/04 14:30:35 [notice] 20#20: exit
+2023/09/04 14:30:35 [notice] 22#22: exit
+2023/09/04 14:30:35 [notice] 23#23: exit
+2023/09/04 14:30:35 [notice] 26#26: exit
+2023/09/04 14:30:35 [notice] 27#27: exit
+2023/09/04 14:30:35 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 14:30:35 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:30:35 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 14:30:35 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:30:35 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 14:30:35 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:30:35 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/09/04 14:30:35 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:30:35 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 14:30:35 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:30:35 [notice] 1#1: exit
+2023/09/04 14:31:21 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:31:21 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:31:21 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:31:21 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:31:21 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:31:21 [notice] 1#1: start worker processes
+2023/09/04 14:31:21 [notice] 1#1: start worker process 20
+2023/09/04 14:31:21 [notice] 1#1: start worker process 21
+2023/09/04 14:31:21 [notice] 1#1: start worker process 22
+2023/09/04 14:31:21 [notice] 1#1: start worker process 23
+2023/09/04 14:31:21 [notice] 1#1: start worker process 24
+2023/09/04 14:31:21 [notice] 1#1: start worker process 25
+2023/09/04 14:31:21 [notice] 1#1: start worker process 26
+2023/09/04 14:31:21 [notice] 1#1: start worker process 27
+2023/09/04 14:39:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 14:39:05 [notice] 20#20: gracefully shutting down
+2023/09/04 14:39:05 [notice] 21#21: gracefully shutting down
+2023/09/04 14:39:05 [notice] 22#22: gracefully shutting down
+2023/09/04 14:39:05 [notice] 23#23: gracefully shutting down
+2023/09/04 14:39:05 [notice] 25#25: gracefully shutting down
+2023/09/04 14:39:05 [notice] 25#25: exiting
+2023/09/04 14:39:05 [notice] 24#24: gracefully shutting down
+2023/09/04 14:39:05 [notice] 26#26: gracefully shutting down
+2023/09/04 14:39:05 [notice] 27#27: gracefully shutting down
+2023/09/04 14:39:05 [notice] 20#20: exiting
+2023/09/04 14:39:05 [notice] 21#21: exiting
+2023/09/04 14:39:05 [notice] 22#22: exiting
+2023/09/04 14:39:05 [notice] 23#23: exiting
+2023/09/04 14:39:05 [notice] 25#25: exit
+2023/09/04 14:39:05 [notice] 24#24: exiting
+2023/09/04 14:39:05 [notice] 26#26: exiting
+2023/09/04 14:39:05 [notice] 27#27: exiting
+2023/09/04 14:39:05 [notice] 20#20: exit
+2023/09/04 14:39:05 [notice] 21#21: exit
+2023/09/04 14:39:05 [notice] 22#22: exit
+2023/09/04 14:39:05 [notice] 23#23: exit
+2023/09/04 14:39:05 [notice] 24#24: exit
+2023/09/04 14:39:05 [notice] 26#26: exit
+2023/09/04 14:39:05 [notice] 27#27: exit
+2023/09/04 14:39:05 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 14:39:05 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 14:39:05 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 14:39:05 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 14:39:05 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 14:39:05 [notice] 1#1: exit
+2023/09/04 14:39:45 [notice] 1#1: using the "epoll" event method
+2023/09/04 14:39:45 [notice] 1#1: nginx/1.25.2
+2023/09/04 14:39:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/04 14:39:45 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/04 14:39:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/04 14:39:45 [notice] 1#1: start worker processes
+2023/09/04 14:39:45 [notice] 1#1: start worker process 20
+2023/09/04 14:39:45 [notice] 1#1: start worker process 21
+2023/09/04 14:39:45 [notice] 1#1: start worker process 22
+2023/09/04 14:39:45 [notice] 1#1: start worker process 23
+2023/09/04 14:39:45 [notice] 1#1: start worker process 24
+2023/09/04 14:39:45 [notice] 1#1: start worker process 25
+2023/09/04 14:39:45 [notice] 1#1: start worker process 26
+2023/09/04 14:39:45 [notice] 1#1: start worker process 27
+2023/09/04 15:59:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/09/04 15:59:21 [notice] 26#26: gracefully shutting down
+2023/09/04 15:59:21 [notice] 22#22: gracefully shutting down
+2023/09/04 15:59:21 [notice] 23#23: gracefully shutting down
+2023/09/04 15:59:21 [notice] 25#25: gracefully shutting down
+2023/09/04 15:59:21 [notice] 20#20: gracefully shutting down
+2023/09/04 15:59:21 [notice] 24#24: gracefully shutting down
+2023/09/04 15:59:21 [notice] 21#21: gracefully shutting down
+2023/09/04 15:59:21 [notice] 27#27: gracefully shutting down
+2023/09/04 15:59:21 [notice] 26#26: exiting
+2023/09/04 15:59:21 [notice] 22#22: exiting
+2023/09/04 15:59:21 [notice] 24#24: exiting
+2023/09/04 15:59:21 [notice] 23#23: exiting
+2023/09/04 15:59:21 [notice] 25#25: exiting
+2023/09/04 15:59:21 [notice] 20#20: exiting
+2023/09/04 15:59:21 [notice] 21#21: exiting
+2023/09/04 15:59:21 [notice] 22#22: exit
+2023/09/04 15:59:21 [notice] 26#26: exit
+2023/09/04 15:59:21 [notice] 23#23: exit
+2023/09/04 15:59:21 [notice] 24#24: exit
+2023/09/04 15:59:21 [notice] 25#25: exit
+2023/09/04 15:59:21 [notice] 27#27: exiting
+2023/09/04 15:59:21 [notice] 20#20: exit
+2023/09/04 15:59:21 [notice] 21#21: exit
+2023/09/04 15:59:21 [notice] 27#27: exit
+2023/09/04 15:59:21 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/09/04 15:59:21 [notice] 1#1: worker process 24 exited with code 0
+2023/09/04 15:59:21 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 15:59:21 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/09/04 15:59:21 [notice] 1#1: worker process 23 exited with code 0
+2023/09/04 15:59:21 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 15:59:22 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/09/04 15:59:22 [notice] 1#1: worker process 27 exited with code 0
+2023/09/04 15:59:22 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 15:59:22 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/09/04 15:59:22 [notice] 1#1: worker process 26 exited with code 0
+2023/09/04 15:59:22 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 15:59:22 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/09/04 15:59:22 [notice] 1#1: worker process 21 exited with code 0
+2023/09/04 15:59:22 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 15:59:22 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/09/04 15:59:22 [notice] 1#1: worker process 20 exited with code 0
+2023/09/04 15:59:22 [notice] 1#1: worker process 25 exited with code 0
+2023/09/04 15:59:22 [notice] 1#1: signal 29 (SIGIO) received
+2023/09/04 15:59:22 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/09/04 15:59:22 [notice] 1#1: worker process 22 exited with code 0
+2023/09/04 15:59:22 [notice] 1#1: exit
+2023/09/05 07:14:18 [notice] 1#1: using the "epoll" event method
+2023/09/05 07:14:18 [notice] 1#1: nginx/1.25.2
+2023/09/05 07:14:18 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/09/05 07:14:18 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+2023/09/05 07:14:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/09/05 07:14:18 [notice] 1#1: start worker processes
+2023/09/05 07:14:18 [notice] 1#1: start worker process 20
+2023/09/05 07:14:18 [notice] 1#1: start worker process 21
+2023/09/05 07:14:18 [notice] 1#1: start worker process 22
+2023/09/05 07:14:18 [notice] 1#1: start worker process 23
+2023/09/05 07:14:18 [notice] 1#1: start worker process 24
+2023/09/05 07:14:18 [notice] 1#1: start worker process 25
+2023/09/05 07:14:18 [notice] 1#1: start worker process 26
+2023/09/05 07:14:18 [notice] 1#1: start worker process 27
