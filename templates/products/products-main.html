@@ -65,7 +65,8 @@
                             <a href="{% url 'product details' product.pk %}"
                                class="btn btn-primary btn-sm">Details</a>
                             {% csrf_token %}
-                            <button class="btn btn-outline-primary btn-sm mt-2 add-to-cart-button"
+                            <button  class="btn btn-outline-primary btn-sm mt-2 add-to-cart-button"
+                                     data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
                                     data-product-id="{{ product.pk }}">
                                 Add to wishlist
                             </button>

@@ -1,30 +1,35 @@
-
     $(document).ready(function () {
     $('.add-to-cart-button').on('click', function () {
-        let product_id = $(this).data('product-id');
-        let product_qty = $(this).closest('.products').find('.quantity-input').val();
-        let token = $('input[name=csrfmiddlewaretoken]').val()
-        $.ajax({
-            method: 'POST',
-            url: '/products/add_to_cart/' + product_id + '/',
-            dataType: 'json',
-            data: {
-                'product_id': product_id,
-                'product_qty': product_qty,
-                csrfmiddlewaretoken: token
-            },
-            success: function () {
-                const popup = document.getElementById('popup');
-                popup.style.display = 'block';
-                // After 2 seconds, hide the popup
-                setTimeout(function () {
-                    popup.style.display = 'none';
-                }, 2000);
-            },
-            error: function () {
-                alert('Error adding product to cart.');
-            }
-        });
+        const isAuthenticated = $(this).data('authenticated');
+        if (isAuthenticated === 'true') {
+            let product_id = $(this).data('product-id');
+            let product_qty = $(this).closest('.products').find('.quantity-input').val();
+            let token = $('input[name=csrfmiddlewaretoken]').val()
+            $.ajax({
+                method: 'POST',
+                url: '/products/add_to_cart/' + product_id + '/',
+                dataType: 'json',
+                data: {
+                    'product_id': product_id,
+                    'product_qty': product_qty,
+                    csrfmiddlewaretoken: token
+                },
+                success: function () {
+                    const popup = document.getElementById('popup');
+                    popup.style.display = 'block';
+                    // After 2 seconds, hide the popup
+                    setTimeout(function () {
+                        popup.style.display = 'none';
+                    }, 2000);
+                },
+                error: function () {
+                    alert('Error adding product to cart.');
+                }
+            });
+        }
+        else {
+            window.location.href = '/accounts/login/';
+        }
     });
 });
 
