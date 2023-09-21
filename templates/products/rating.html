@@ -10,17 +10,22 @@
 <ul class="btn btn-light list-inline rating-list">
     <li onclick="rate({{ product.id }}, 5)">
         <i class="fa fa-star {% if product.user_rating > 4 %} checked {% endif %}"
+           data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
            title="Rate 5"></i></li>
     <li onclick="rate({{ product.id }}, 4)">
         <i class="fa fa-star {% if product.user_rating > 3 %} checked {% endif %}"
+           data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
            title="Rate 4"></i></li>
     <li onclick="rate({{ product.id }}, 3)">
         <i class="fa fa-star {% if product.user_rating > 2 %} checked {% endif %}"
+           data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
            title="Rate 3"></i></li>
     <li onclick="rate({{ product.id }}, 2)">
         <i class="fa fa-star {% if product.user_rating > 1 %} checked {% endif %}"
+           data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
            title="Rate 2"></i></li>
     <li onclick="rate({{ product.id }}, 1)">
         <i class="fa fa-star {% if product.user_rating > 0 %} checked {% endif %}"
+           data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
            title="Rate 1"></i></li>
 </ul>

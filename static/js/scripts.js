@@ -112,12 +112,17 @@ window.addEventListener('DOMContentLoaded', event => {
 inc_value = parseInt
 
 const rate = (product_id, rating) => {
-    fetch(`/products/rate/${product_id}/${rating}/`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(rest => {
-        window.location.reload();
-    })
+    const isAuthenticated = $(this).data('authenticated');
+    if (isAuthenticated === true) {
+        fetch(`/products/rate/${product_id}/${rating}/`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(rest => {
+            window.location.reload();
+        })}
+    else {
+        window.location.href = '/accounts/login/';
+    }
 }
