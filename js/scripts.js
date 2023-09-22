@@ -1,7 +1,7 @@
     $(document).ready(function () {
     $('.add-to-cart-button').on('click', function () {
         const isAuthenticated = $(this).data('authenticated');
-        if (isAuthenticated === 'true') {
+        if (isAuthenticated === true) {
             let product_id = $(this).data('product-id');
             let product_qty = $(this).closest('.products').find('.quantity-input').val();
             let token = $('input[name=csrfmiddlewaretoken]').val()
@@ -112,12 +112,17 @@ window.addEventListener('DOMContentLoaded', event => {
 inc_value = parseInt
 
 const rate = (product_id, rating) => {
-    fetch(`/products/rate/${product_id}/${rating}/`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(rest => {
-        window.location.reload();
-    })
+    const isAuthenticated = $('.star-class').data('authenticated');
+    if (isAuthenticated === true) {
+        fetch(`/products/rate/${product_id}/${rating}/`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(rest => {
+            window.location.reload();
+        })}
+    else {
+        window.location.href = '/accounts/login/';
+    }
 }

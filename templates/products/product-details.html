@@ -58,8 +58,9 @@
                     <div class="col-md-4">
                         {% csrf_token %}
                         <button class="btn btn-primary btn-lg add-to-cart-button"
-                                data-product-id="{{ product.pk }}">
-                            Add to wishlist
+                                      data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
+                                    data-product-id="{{ product.pk }}">
+                                Add to wishlist
                         </button>
                     </div>
                 </div><!-- end row -->
