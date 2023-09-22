@@ -13321,3 +13321,8 @@ a.label:focus, a.label:hover {
 .products-nav-item {
      text-decoration: none;
 }
+
+.id-span {
+    font-size: 14px;
+    margin-left: 20px;
+}
