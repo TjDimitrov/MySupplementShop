@@ -10,17 +10,18 @@ def get_user_rating(user_id):
     return Rating.objects.filter(user_id=user_id)
 
 
-def products_page(request, category_name=None):
+def products_page(request, category_name=None, brand_name=None):
     all_products = Product.objects.all()
     if category_name:
         all_products = Product.objects.filter(category__name=category_name)
+    elif brand_name:
+        all_products = Product.objects.filter(brand__name=brand_name)
     context = {
         'all_products': all_products,
     }
     return render(request, template_name='products/products-main.html', context=context)
 
 
-@login_required
 def product_details_page(request, pk):
     product = Product.objects.filter(id=pk).first()
     total_scores = len(Rating.objects.filter(product=product))

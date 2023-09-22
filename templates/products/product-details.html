@@ -17,19 +17,24 @@
                         <h1>{{ product.name }}</h1>
                     </div>
                 </div>
+                {% if product.quantity %}
+                    <span>{{ product.quantity }}</span>
+                {% endif %}
+                <span class="id-span">№:{{ product.id }}</span>
                 <div class="row">
                     <div class="col-md-12">
                         {% for type in product.category.all %}
-                            <span class="label label-primary">{{ type.name }}</span>
+                            <a href="{% url 'products_by_category' type.name %}"
+                               class="label label-primary" style="text-decoration: none;">{{ type.name }}
+                            </a>
                         {% endfor %}
-                        <span class="monospaced">{{ product.id }}</span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="label label-primary">
-                            {{ product.brand }}
-                        </p>
+                        <a href="{% url 'products_by_category' product.brand %}"
+                           class="label label-primary" style="text-decoration: none;">{{ product.brand }}
+                        </a>
                     </div>
                 </div><!-- end row -->
                 <div class="row">
