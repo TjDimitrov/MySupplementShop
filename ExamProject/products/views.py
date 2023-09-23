@@ -10,12 +10,12 @@ def get_user_rating(user_id):
     return Rating.objects.filter(user_id=user_id)
 
 
-def products_page(request, category_name=None, brand_name=None):
+def products_page(request, category_name=None):
     all_products = Product.objects.all()
     if category_name:
         all_products = Product.objects.filter(category__name=category_name)
-    elif brand_name:
-        all_products = Product.objects.filter(brand__name=brand_name)
+        if not all_products:
+            all_products = Product.objects.filter(brand=category_name)
     context = {
         'all_products': all_products,
     }
