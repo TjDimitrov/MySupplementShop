@@ -1,5 +1,5 @@
 from django import forms
-from ExamProject.products.models import Product, ProductCategory
+from ExamProject.products.models import Product, ProductCategory, Review
 
 
 class ProductBaseForm(forms.ModelForm):
@@ -34,3 +34,14 @@ class ProductEditForm(ProductBaseForm):
 
 class ProductDeleteForm(ProductBaseForm):
     pass
+
+
+class ProductReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ['comment_text']
+        widgets = {
+            'comment_text': forms.Textarea(
+                attrs={'placeholder': 'Add comment...'}
+            )
+        }

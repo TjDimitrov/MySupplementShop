@@ -1,0 +1,21 @@
+<div class="">
+    <div class="col-md-12 bootstrap snippets">
+        <div class="panel">
+            <div class="panel-body mb-0">
+                <h4 class="mb-0">Leave a comment</h4>
+                <form method="POST" id="submit-review" style="background-color: white;" action="{% url 'review product' product.id %}">
+                    {% csrf_token %}
+                    <label>
+                        <textarea class="form-control" id="comment-text" name="comment_text" rows="3" cols="50" minlength="5" style="resize: none"
+                                  placeholder="What are you thinking about this product?"></textarea>
+                    </label>
+                    <div class="mar-top clearfix">
+                        <button class="review-btn btn btn-sm btn-primary pull-right" type="submit" style="color: black"><i
+                                class="fa fa-pencil fa-fw"></i><b>Share</b>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

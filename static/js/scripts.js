@@ -1,4 +1,5 @@
-    $(document).ready(function () {
+//add to cart or error pop-up
+$(document).ready(function () {
     $('.add-to-cart-button').on('click', function () {
         const isAuthenticated = $(this).data('authenticated');
         if (isAuthenticated === true) {
@@ -26,44 +27,44 @@
                     alert('Error adding product to cart.');
                 }
             });
-        }
-        else {
+        } else {
             window.location.href = '/accounts/login/';
         }
     });
 });
 
-    $(document).ready(function () {
-        $('.increment-btn').click(function (e) {
-            e.preventDefault();
+//Increase product quantity
+$(document).ready(function () {
+    $('.increment-btn').click(function (e) {
+        e.preventDefault();
 
-            let inc_value = $(this).closest('.add-to-cart').find('.quantity-input').val();
-            let value = parseInt(inc_value, 10);
-            value = isNaN(value) ? 0 : value;
-            if(value < 10){
-                value++;
-                $(this).closest('.add-to-cart').find('.quantity-input').val(value);
-            }
-        })
+        let inc_value = $(this).closest('.add-to-cart').find('.quantity-input').val();
+        let value = parseInt(inc_value, 10);
+        value = isNaN(value) ? 0 : value;
+        if (value < 10) {
+            value++;
+            $(this).closest('.add-to-cart').find('.quantity-input').val(value);
+        }
     })
+})
 
-    $(document).ready(function () {
-        $('.decrement-btn').click(function (e) {
-            e.preventDefault();
+//Decrease product quantity
+$(document).ready(function () {
+    $('.decrement-btn').click(function (e) {
+        e.preventDefault();
 
-            let dec_value = $(this).closest('.add-to-cart').find('.quantity-input').val();
-            let value = parseInt(dec_value, 10);
-            value = isNaN(value) ? 1 : value;
-            if(value > 1){
-                value-=1;
-                $(this).closest('.add-to-cart').find('.quantity-input').val(value);
-            }
-        })
+        let dec_value = $(this).closest('.add-to-cart').find('.quantity-input').val();
+        let value = parseInt(dec_value, 10);
+        value = isNaN(value) ? 1 : value;
+        if (value > 1) {
+            value -= 1;
+            $(this).closest('.add-to-cart').find('.quantity-input').val(value);
+        }
     })
+})
 
-
+// Navbar shrink function
 window.addEventListener('DOMContentLoaded', event => {
-    // Navbar shrink function
     var navbarShrink = function () {
         const cartClass = document.body.querySelector('.cart')
         const teamTag = document.body.querySelector('#team')
@@ -111,6 +112,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 inc_value = parseInt
 
+// rate product
 const rate = (product_id, rating) => {
     const isAuthenticated = $('.star-class').data('authenticated');
     if (isAuthenticated === true) {
@@ -121,8 +123,48 @@ const rate = (product_id, rating) => {
             }
         }).then(rest => {
             window.location.reload();
-        })}
-    else {
+        })
+    } else {
         window.location.href = '/accounts/login/';
     }
 }
+
+$(document).ready(function() {
+    $('#submit-review').submit(function (event) {
+        const textAreaLen = document.getElementById('comment-text').value.length;
+        if (textAreaLen > 0) {
+            return true;
+        }
+        else {
+            event.preventDefault();
+            alert('Your review must be at least 5 symbols.');
+            return false;
+        }
+    })
+})
+
+// const delButton = document.getElementById('del-button')
+// delButton.addEventListener('click', function () {
+//     const userConfirmed = confirm('Are you sure you want to delete your review?')
+//     if (userConfirmed) {
+//         $.ajax({
+//             method: 'POST',
+//             url: '/delete-review/' + product_id + '/',
+//             dataType: 'json',
+//
+//             success: function () {
+//                 const popup = document.getElementById('popup');
+//                 popup.style.display = 'block';
+//                 // After 2 seconds, hide the popup
+//                 setTimeout(function () {
+//                     popup.style.display = 'none';
+//                 }, 2000);
+//             },
+//             error: function () {
+//                 alert('Error adding product to cart.');
+//             }
+//         });
+//     } else {
+//         pass
+//     }
+// })

@@ -2,8 +2,9 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 
-from ExamProject.products.forms import ProductCreateForm, ProductEditForm, ProductDeleteForm
-from ExamProject.products.models import Product, Rating, Cart
+from ExamProject.accounts.models import StoreUser
+from ExamProject.products.forms import ProductCreateForm, ProductEditForm, ProductDeleteForm, ProductReviewForm
+from ExamProject.products.models import Product, Rating, Cart, Review
 
 
 def get_user_rating(user_id):
@@ -24,9 +25,11 @@ def products_page(request, category_name=None):
 
 def product_details_page(request, pk):
     product = Product.objects.filter(id=pk).first()
+    reviews = Review.objects.filter(product=product)
     total_scores = len(Rating.objects.filter(product=product))
     context = {
         'product': product,
+        'reviews': reviews,
         'total_scores': total_scores,
     }
 
@@ -124,3 +127,33 @@ def view_cart(request, sort_type=None):
     return render(request, 'products/cart.html', context=context)
 
 
+def create_review(request, product_id):
+    if request.method == 'POST':
+        product = Product.objects.get(id=product_id)
+        user_id = request.user.id
+        if not user_id:
+            return redirect('login')
+        user = StoreUser.objects.get(id=user_id)
+        form = ProductReviewForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.product = product
+            comment.user = user
+            comment.save()
+            return redirect('product details', product_id)
+        else:
+            print(form.errors.as_data())
+    else:
+        form = ProductReviewForm()
+
+    context = {
+        'form': form
+    }
+
+    return render(request, 'products/product-details.html', context=context)
+
+
+def delete_review(request, review_id):
+    review = get_object_or_404(Review, id=review_id)
+    review.delete()
+    return redirect('product details', pk=review.product.pk)
