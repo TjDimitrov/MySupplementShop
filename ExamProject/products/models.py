@@ -98,6 +98,29 @@ class Rating(models.Model):
         return str(self.pk)
 
 
+class Review(models.Model):
+    comment_text = models.TextField(
+        max_length=300,
+        null=False,
+        blank=False
+    )
+
+    date_time_of_publication = models.DateTimeField(
+        auto_now_add=True
+    )
+    user = models.ForeignKey(
+        UserModel,
+        on_delete=models.CASCADE
+    )
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.CASCADE
+    )
+
+    class Meta:
+        ordering = ['-date_time_of_publication']
+
+
 class Cart(models.Model):
     user = models.ForeignKey(
         UserModel,
@@ -110,4 +133,3 @@ class Cart(models.Model):
     quantity = models.PositiveIntegerField(
         default=1
     )
-
