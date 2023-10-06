@@ -17,7 +17,7 @@ CSRF_TRUSTED_ORIGINS = [f'https://{x}' for x in ALLOWED_HOSTS]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://shopdb_xfd0_user:e7lZXUWVE3GZKHdEp3GaXRKFq7hNip3w@dpg-ckf6qpgl3its739nrurg-a.frankfurt-postgres.render.com/shopdb_xfd0')
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
