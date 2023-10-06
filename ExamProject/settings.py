@@ -11,13 +11,13 @@ SECRET_KEY = os.getenv('SECRET_KEY', None)
 DEBUG = os.environ.get('DEBUG', False)
 # TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [f'https://{x}' for x in ALLOWED_HOSTS]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.(os.environ.get("DATABASE_URL"))
 }
 
 
