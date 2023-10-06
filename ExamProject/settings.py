@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 from django.urls import reverse_lazy
+import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -16,15 +17,10 @@ CSRF_TRUSTED_ORIGINS = [f'https://{x}' for x in ALLOWED_HOSTS]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', None),
-        'USER': os.getenv('DB_USER', None),
-        'PASSWORD': os.getenv('DB_PASSWORD', None),
-        'HOST': os.getenv('DB_HOST', None),
-        'PORT': os.getenv('DB_PORT', 5432),
-    }
+    'default': dj_database_url.parse('postgres://shopdb_xfd0_user:e7lZXUWVE3GZKHdEp3GaXRKFq7hNip3w@dpg-ckf6qpgl3its739nrurg-a.frankfurt-postgres.render.com/shopdb_xfd0')
 }
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -108,6 +104,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles/')
 
 AUTH_USER_MODEL = 'accounts.StoreUser'
+LOGIN_URL = reverse_lazy('login')
 LOGIN_REDIRECT_URL = reverse_lazy('homepage')
 LOGOUT_REDIRECT_URL = reverse_lazy('homepage')
 
