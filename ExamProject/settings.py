@@ -115,3 +115,9 @@ LOGIN_REDIRECT_URL = reverse_lazy('homepage')
 LOGOUT_REDIRECT_URL = reverse_lazy('homepage')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+GOOGLE_CLOUD_STORAGE_BUCKET = 'shop-world-bucket'
+GOOGLE_CLOUD_STORAGE_URL = f'https://storage.googleapis.com/{GOOGLE_CLOUD_STORAGE_BUCKET}/'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'shop-world-bucket'
