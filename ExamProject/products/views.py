@@ -57,7 +57,7 @@ def edit_product(request, pk):
     if request.method == 'GET':
         form = ProductEditForm(instance=product)
     else:
-        form = ProductEditForm(request.POST, instance=product)
+        form = ProductEditForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
             return redirect('product details', pk)

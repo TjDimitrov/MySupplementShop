@@ -61,7 +61,7 @@ def edit_team_member(request, pk):
     if request.method == 'GET':
         form = EditTeamMemberForm(instance=member)
     else:
-        form = EditTeamMemberForm(request.POST, instance=member)
+        form = EditTeamMemberForm(request.POST, request.FILES, instance=member)
         if form.is_valid():
             form.save()
             return redirect('team-control')
