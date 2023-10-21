@@ -17,7 +17,7 @@ class TeamMember(models.Model):
     LAST_NAME_MIN_LEN = 2
     LAST_NAME_MAX_LEN = 30
 
-    DESCRIPTION_MAX_LEN = 35
+    DESCRIPTION_MAX_LEN = 100
 
     first_name = models.CharField(
         max_length=FIRST_NAME_MAX_LEN,
