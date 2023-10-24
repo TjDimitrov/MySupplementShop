@@ -7,7 +7,7 @@
                 <div class="col-md-10">
                 <div class="card text-center" style="background-color: transparent; border-color: transparent;">
                     <div class="card-body">
-                        <a href="{% url 'add product' %}" class="btn btn-warning">Add new product</a>
+                        <a href="{% url 'add product' %}" class="btn btn-warning" style="color: black">Add new product</a>
                     </div>
                 </div>
             {% endif %}
@@ -63,7 +63,7 @@
                         <h6 class="text-success">Free shipping</h6>
                         <div class="d-flex flex-column mt-4">
                             <a href="{% url 'product details' product.pk %}"
-                               class="btn btn-primary btn-sm">Details</a>
+                               class="btn btn-primary btn-sm" style="color: black">Details</a>
                             {% csrf_token %}
                             <button  class="btn btn-outline-primary btn-sm mt-2 add-to-cart-button"
                                      data-authenticated="{% if request.user.is_authenticated %}true{% else %}false{% endif %}"
@@ -79,7 +79,6 @@
                                         Delete</a>
                                 </div>
                             {% endif %}
-
                         </div>
                     </div>
                 </div>
