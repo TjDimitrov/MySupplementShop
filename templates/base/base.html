@@ -26,7 +26,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet"
           type="text/css"/>
     <link href="{% static 'css/styles.css' %}" rel="stylesheet"/>
-
 </head>
 <body class="d-flex flex-column">
 {% include 'base/nav.html' %}
@@ -45,11 +44,16 @@
                         class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="col-lg-4 text-lg-end">
-                <a class="link-dark text-decoration-none me-3 text-light" href="">Privacy Policy</a>
-                <a class="link-dark text-decoration-none text-light" href="">Terms of Use</a>
+                <a class="link-dark text-decoration-none me-3 text-light" href="" data-toggle="modal"
+                        data-target=".privacy-policy">Privacy Policy</a>
+                <a class="link-dark text-decoration-none text-light" href="" data-toggle="modal"
+                        data-target=".terms-of-use">Terms of Use
+                </a>
             </div>
         </div>
     </div>
+    {% include 'terms-of-use-modal.html' %}
+    {% include 'privacy-policy-modal.html' %}
 </footer>
 </body>
 </html>
